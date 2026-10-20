@@ -1,0 +1,47 @@
+name: Update insider data
+
+on:
+  schedule:
+    # 11:30 UTC on weekdays (~7:30am ET), after SEC publishes the prior day's index
+    - cron: "30 11 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Business days of filings to fetch (use 20+ once to backfill)"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch filings, detect clusters, send alert, export JSON
+        env:
+          LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '3' }}
+          NTFY_CLICK_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python main.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add insider_tracker.db docs/data.json
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Update insider data $(date -u +%Y-%m-%d)"
+          git push

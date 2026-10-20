@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insider Cluster Tracker</title>
+<meta name="description" content="Screens SEC Form 4 filings for clusters of insiders buying their own company's stock.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232a78d6'/><path d='M7 22l6-6 4 4 8-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f5f5f3;
+  --surface: #fcfcfb;
+  --surface-2: #f0efec;
+  --border: #e3e2dd;
+  --text: #0b0b0b;
+  --text-2: #52514e;
+  --text-3: #7a7974;
+  --accent: #2a78d6;
+  --accent-soft: #e6f0fb;
+  --other: #c3c2b7;
+  --good: #008300;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211;
+    --surface: #1a1a19;
+    --surface-2: #232321;
+    --border: #2f2f2c;
+    --text: #f0efec;
+    --text-2: #c3c2b7;
+    --text-3: #8f8e86;
+    --accent: #3987e5;
+    --accent-soft: #1b2a3d;
+    --other: #4a4a46;
+    --good: #3fae3f;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211;
+  --surface: #1a1a19;
+  --surface-2: #232321;
+  --border: #2f2f2c;
+  --text: #f0efec;
+  --text-2: #c3c2b7;
+  --text-3: #8f8e86;
+  --accent: #3987e5;
+  --accent-soft: #1b2a3d;
+  --other: #4a4a46;
+  --good: #3fae3f;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+.num, td.n, .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+
+header.top { padding: 32px 0 20px; display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
+h1 { font-size: 28px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+.lede { margin: 0; color: var(--text-2); max-width: 640px; }
+.status { font-size: 13px; color: var(--text-3); text-align: right; }
+.status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--good); margin-right: 6px; vertical-align: 1px; }
+.theme-btn { margin-top: 8px; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); }
+section { margin-bottom: 20px; }
+h2 { font-size: 17px; margin: 0; }
+.sec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 28px 0 12px; }
+.sec-head .hint { color: var(--text-3); font-size: 13px; }
+
+/* Controls */
+.controls { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)) auto; gap: 12px 16px; padding: 16px; align-items: end; position: sticky; top: 0; z-index: 5; }
+.ctl label { display: block; font-size: 12px; font-weight: 500; color: var(--text-2); margin-bottom: 4px; }
+.ctl label .v { color: var(--text); font-family: "IBM Plex Mono", monospace; }
+select, input[type=search] {
+  width: 100%; font: inherit; font-size: 14px; color: var(--text); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; height: 36px;
+}
+input[type=range] { width: 100%; accent-color: var(--accent); height: 36px; margin: 0; }
+button {
+  font: inherit; font-size: 14px; cursor: pointer; color: var(--text); background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 8px; padding: 7px 12px; height: 36px; white-space: nowrap;
+}
+button:hover { border-color: var(--text-3); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* KPIs */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.kpi { padding: 16px; }
+.kpi .label { font-size: 13px; color: var(--text-2); }
+.kpi .value { font-size: 28px; font-weight: 600; line-height: 1.2; margin-top: 4px; }
+.kpi .sub { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+
+/* Chart */
+.chart-card { padding: 16px 16px 8px; }
+.chart-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.legend { display: flex; gap: 16px; font-size: 13px; color: var(--text-2); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+#chart { position: relative; }
+#chart svg { display: block; width: 100%; height: 240px; overflow: visible; }
+#chart .axis text { fill: var(--text-3); font-size: 11px; font-family: "IBM Plex Mono", monospace; }
+#chart .grid line { stroke: var(--border); }
+#chart .bar-hit { fill: transparent; cursor: pointer; }
+#chart .col:hover .seg, #chart .col.active .seg { filter: brightness(1.12); }
+.tip {
+  position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  min-width: 170px; opacity: 0; transition: opacity .08s; z-index: 3;
+}
+.tip .d { color: var(--text-3); margin-bottom: 4px; }
+.tip .row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.tip .row span:first-child { color: var(--text-2); display: flex; align-items: center; gap: 6px; }
+.tip .row b { font-family: "IBM Plex Mono", monospace; font-weight: 500; }
+.tip .key { width: 12px; height: 3px; border-radius: 2px; display: inline-block; }
+
+/* Clusters */
+.clusters { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+.cl { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.cl-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.tk { font-size: 22px; font-weight: 700; letter-spacing: .01em; line-height: 1.1; }
+.co { color: var(--text-2); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
+.cl-total { text-align: right; }
+.cl-total .num { font-size: 20px; font-weight: 500; }
+.cl-total .sub { font-size: 12px; color: var(--text-3); }
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--text-2); border: 1px solid var(--border); }
+.pill.hot { background: var(--accent-soft); color: var(--accent); border-color: transparent; font-weight: 500; }
+.mini { width: 100%; border-collapse: collapse; font-size: 13px; }
+.mini td { padding: 5px 0; border-top: 1px solid var(--border); vertical-align: top; }
+.mini td.n { text-align: right; white-space: nowrap; padding-left: 8px; }
+.mini .who { font-weight: 500; }
+.mini .role { color: var(--text-3); font-size: 12px; }
+.mini .bar { height: 3px; background: var(--accent); border-radius: 2px; margin-top: 4px; }
+.cl-links { display: flex; gap: 14px; font-size: 13px; margin-top: auto; padding-top: 4px; }
+.empty { padding: 32px 16px; text-align: center; color: var(--text-2); }
+
+/* Table */
+.tbl-wrap { overflow-x: auto; }
+table.all { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.all th { text-align: left; font-weight: 500; color: var(--text-2); font-size: 12px; padding: 10px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--surface); }
+table.all th.n, table.all td.n { text-align: right; }
+table.all th[aria-sort]::after { content: " ↓"; color: var(--text-3); }
+table.all th[aria-sort=ascending]::after { content: " ↑"; }
+table.all td { padding: 8px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+table.all tr:last-child td { border-bottom: 0; }
+table.all tr.in-cl td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.tk-btn { background: none; border: 0; padding: 0; height: auto; color: var(--accent); font-weight: 600; font-family: inherit; font-size: inherit; }
+.more { display: flex; justify-content: center; padding: 12px; border-top: 1px solid var(--border); }
+
+/* Alerts + about */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.prose { padding: 18px 20px; font-size: 14px; color: var(--text-2); }
+.prose h3 { font-size: 15px; color: var(--text); margin: 0 0 8px; }
+.prose p { margin: 0 0 10px; }
+.prose ol, .prose ul { margin: 0 0 10px; padding-left: 20px; }
+.prose li { margin-bottom: 4px; }
+code { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+footer { color: var(--text-3); font-size: 12px; padding: 24px 0 40px; }
+
+@media (max-width: 900px) {
+  .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); position: static; }
+  .controls .search { grid-column: 1 / -1; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .two { grid-template-columns: 1fr; }
+  .status { text-align: left; }
+}
+@media (max-width: 420px) {
+  .clusters { grid-template-columns: 1fr; }
+  .kpi .value { font-size: 22px; }
+  h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Insider Cluster Tracker</h1>
+      <p class="lede">Flags companies where two or more insiders bought their own stock on the open market within a short window, screened daily from SEC Form 4 filings.</p>
+    </div>
+    <div class="status">
+      <div><span class="dot"></span><span id="updated">Loading…</span></div>
+      <div id="range"></div>
+      <button class="theme-btn" id="themeBtn" type="button">Toggle theme</button>
+    </div>
+  </header>
+
+  <section class="card controls" aria-label="Screener filters">
+    <div class="ctl">
+      <label for="minVal">Min single purchase</label>
+      <select id="minVal">
+        <option value="50000">$50K</option>
+        <option value="100000">$100K</option>
+        <option value="250000">$250K</option>
+        <option value="500000">$500K</option>
+        <option value="1000000">$1M</option>
+      </select>
+    </div>
+    <div class="ctl">
+      <label for="minIns">Min distinct insiders</label>
+      <select id="minIns">
+        <option value="2">2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+        <option value="5">5+</option>
+      </select>
+    </div>
+    <div class="ctl">
+      <label for="win">Cluster window: <span class="v" id="winV">10</span> days</label>
+      <input type="range" id="win" min="1" max="30" step="1" value="10">
+    </div>
+    <div class="ctl">
+      <label for="role">Insider role</label>
+      <select id="role">
+        <option value="all">All insiders</option>
+        <option value="named">Officers &amp; directors</option>
+        <option value="exec">C-suite / President only</option>
+      </select>
+    </div>
+    <div class="ctl search">
+      <label for="q">Search ticker or company</label>
+      <input type="search" id="q" placeholder="e.g. HUBS" autocomplete="off">
+    </div>
+    <div class="ctl"><button id="reset" type="button">Reset</button></div>
+  </section>
+
+  <section class="kpis" aria-label="Summary">
+    <div class="card kpi"><div class="label">Clusters flagged</div><div class="value num" id="kClusters">–</div><div class="sub" id="kClustersSub"></div></div>
+    <div class="card kpi"><div class="label">Bought within clusters</div><div class="value num" id="kClVal">–</div><div class="sub" id="kClValSub"></div></div>
+    <div class="card kpi"><div class="label">Qualifying purchases</div><div class="value num" id="kTx">–</div><div class="sub" id="kTxSub"></div></div>
+    <div class="card kpi"><div class="label">Companies with insider buying</div><div class="value num" id="kCos">–</div><div class="sub" id="kCosSub"></div></div>
+  </section>
+
+  <section class="card chart-card">
+    <div class="chart-top">
+      <h2>Daily insider purchases ($)</h2>
+      <div class="legend"><span><i style="background:var(--accent)"></i>Part of a cluster</span><span><i style="background:var(--other)"></i>Other purchases</span></div>
+    </div>
+    <div id="chart"><div class="tip" id="tip" role="status"></div></div>
+  </section>
+
+  <div class="sec-head">
+    <h2>Flagged clusters</h2>
+    <div class="ctl" style="display:flex;gap:8px;align-items:center">
+      <label for="sort" style="margin:0;font-size:13px;color:var(--text-2)">Sort</label>
+      <select id="sort" style="width:auto">
+        <option value="value">Total $ bought</option>
+        <option value="insiders">Number of insiders</option>
+        <option value="recent">Most recent</option>
+      </select>
+    </div>
+  </div>
+  <section class="clusters" id="clusters"></section>
+
+  <div class="sec-head">
+    <h2>All qualifying purchases</h2>
+    <span class="hint">Blue edge = part of a flagged cluster. Click a ticker to filter.</span>
+  </div>
+  <section class="card">
+    <div class="tbl-wrap">
+      <table class="all" id="tbl">
+        <thead><tr>
+          <th data-k="transaction_date">Date</th>
+          <th data-k="ticker">Ticker</th>
+          <th data-k="company_name">Company</th>
+          <th data-k="insider_name">Insider</th>
+          <th data-k="insider_title">Role</th>
+          <th data-k="shares" class="n">Shares</th>
+          <th data-k="price_per_share" class="n">Price</th>
+          <th data-k="total_value" class="n">Value</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="more" id="more" hidden><button type="button" id="moreBtn">Show more</button></div>
+  </section>
+
+  <div class="sec-head"><h2>Alerts &amp; method</h2></div>
+  <section class="two">
+    <div class="card prose">
+      <h3>Get real-time alerts</h3>
+      <p>Each weekday after the pipeline runs, a digest of flagged clusters is pushed to an <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy</a> topic. No account needed:</p>
+      <ol>
+        <li>Install the ntfy app (<a href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener">iOS</a> / <a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy" target="_blank" rel="noopener">Android</a>), or open it <a id="ntfyLink" href="https://ntfy.sh/insider-cluster-30f8c67d9a94" target="_blank" rel="noopener">in your browser</a>.</li>
+        <li>Subscribe to topic <code id="ntfyTopic">insider-cluster-30f8c67d9a94</code>.</li>
+      </ol>
+      <p>This page refreshes its data on the same schedule. Hit reload after ~7:30am ET.</p>
+    </div>
+    <div class="card prose">
+      <h3>How it works</h3>
+      <ol>
+        <li>Pulls every Form 4 from SEC EDGAR's daily index.</li>
+        <li>Keeps only open-market purchases (code <code>P</code>) of $50K+, which drops sales, option exercises, grants and gifts. Funds that are only 10% owners are excluded.</li>
+        <li>Groups purchases by company and flags a <b>cluster</b> when enough <i>distinct</i> insiders buy within the window.</li>
+      </ol>
+      <p>Clustered insider buying has a documented association with later outperformance, but this is a research-prioritization tool, not a trading signal. Clusters right after earnings can just mean the trading window opened.</p>
+    </div>
+  </section>
+
+  <footer>Data: SEC EDGAR Form 4 filings, updated each weekday by a GitHub Actions job. Not investment advice.</footer>
+</div>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const fmtUSD = (v) => {
+    const a = Math.abs(v);
+    // Thresholds sit just below each unit so $999,999 reads "$1.0M", not "$1000K".
+    if (a >= 9.995e8) return "$" + (v / 1e9).toFixed(a >= 9.95e9 ? 0 : 1) + "B";
+    if (a >= 9.995e5) return "$" + (v / 1e6).toFixed(a >= 9.95e6 ? 0 : 1) + "M";
+    if (a >= 1e3) return "$" + (v / 1e3).toFixed(0) + "K";
+    return "$" + v.toFixed(0);
+  };
+  const fmtFull = (v) => "$" + Math.round(v).toLocaleString("en-US");
+  const fmtNum = (v) => Math.round(v).toLocaleString("en-US");
+  const parseD = (s) => new Date(s + "T00:00:00Z");
+  const dayDiff = (a, b) => Math.round((parseD(b) - parseD(a)) / 864e5);
+  const fmtDate = (s, opts = { month: "short", day: "numeric" }) =>
+    parseD(s).toLocaleDateString("en-US", { ...opts, timeZone: "UTC" });
+  const el = (tag, props = {}, ...kids) => {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(props)) {
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v);
+    }
+    for (const kid of kids) if (kid != null) n.append(kid);
+    return n;
+  };
+
+  // Theme toggle: flips relative to whatever is currently showing.
+  const root = document.documentElement;
+  try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch (e) {}
+  $("#themeBtn").addEventListener("click", () => {
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    render();
+  });
+
+  let DATA = [], DEFAULTS = {};
+  const state = { sortKey: "transaction_date", sortDir: -1, shown: 50 };
+
+  const EXEC_RE = /\b(ceo|cfo|coo|cto|chief|president|chair)/i;
+  function roleOK(t, mode) {
+    if (mode === "all") return true;
+    const title = t.insider_title || "";
+    if (mode === "named") return title !== "Insider" && title !== "10% Owner";
+    return EXEC_RE.test(title);
+  }
+
+  // Port of cluster_detector.detect_clusters: for each purchase, look forward
+  // `win` days and count distinct insiders; keep the biggest window per ticker.
+  function detectClusters(txs, minSize, win) {
+    const byTicker = new Map();
+    for (const t of txs) {
+      if (!t.ticker) continue;
+      if (!byTicker.has(t.ticker)) byTicker.set(t.ticker, []);
+      byTicker.get(t.ticker).push(t);
+    }
+    const out = [];
+    for (const [ticker, list] of byTicker) {
+      list.sort((a, b) => a.transaction_date.localeCompare(b.transaction_date));
+      let best = null;
+      for (let i = 0; i < list.length; i++) {
+        const w = [list[i]];
+        for (let j = i + 1; j < list.length; j++) {
+          if (dayDiff(list[i].transaction_date, list[j].transaction_date) <= win) w.push(list[j]);
+          else break;
+        }
+        const names = new Set(w.map((t) => t.insider_name));
+        if (names.size >= minSize && (!best || names.size > best.numInsiders)) {
+          best = {
+            ticker, company: list[i].company_name, txs: w, numInsiders: names.size,
+            total: w.reduce((s, t) => s + t.total_value, 0),
+            start: w[0].transaction_date, end: w[w.length - 1].transaction_date,
+          };
+        }
+      }
+      if (best) out.push(best);
+    }
+    return out;
+  }
+
+  function current() {
+    const minVal = +$("#minVal").value, minIns = +$("#minIns").value, win = +$("#win").value;
+    const role = $("#role").value, q = $("#q").value.trim().toLowerCase();
+    const base = DATA.filter((t) => t.total_value >= minVal && roleOK(t, role));
+    const clusters = detectClusters(base, minIns, win);
+    const match = (t) => !q || t.ticker.toLowerCase().includes(q) || t.company_name.toLowerCase().includes(q);
+    const txs = base.filter(match);
+    const shown = clusters.filter((c) => match(c.txs[0]));
+    const inCluster = new Set();
+    for (const c of clusters) for (const t of c.txs) inCluster.add(t);
+    return { txs, clusters: shown, inCluster, win };
+  }
+
+  function render() {
+    const { txs, clusters, inCluster, win } = current();
+    $("#winV").textContent = win;
+    renderKPIs(txs, clusters);
+    renderChart(txs, inCluster);
+    renderClusters(clusters);
+    renderTable(txs, inCluster);
+  }
+
+  function renderKPIs(txs, clusters) {
+    const clVal = clusters.reduce((s, c) => s + c.total, 0);
+    const allVal = txs.reduce((s, t) => s + t.total_value, 0);
+    const cos = new Set(txs.map((t) => t.ticker || t.company_name));
+    $("#kClusters").textContent = clusters.length;
+    const ins = clusters.reduce((s, c) => s + c.numInsiders, 0);
+    $("#kClustersSub").textContent = clusters.length ? `${ins} insiders across them` : "Loosen filters to see more";
+    $("#kClVal").textContent = fmtUSD(clVal);
+    $("#kClValSub").textContent = allVal ? `${Math.round((clVal / allVal) * 100)}% of all qualifying $` : "";
+    $("#kTx").textContent = fmtNum(txs.length);
+    $("#kTxSub").textContent = `${fmtUSD(allVal)} total`;
+    $("#kCos").textContent = fmtNum(cos.size);
+    $("#kCosSub").textContent = clusters.length ? `${(clusters.length / Math.max(cos.size, 1) * 100).toFixed(0)}% clustered` : "";
+  }
+
+  // Stacked daily bars: cluster purchases on the baseline, everything else on top.
+  function renderChart(txs, inCluster) {
+    const host = $("#chart"), tip = $("#tip");
+    host.querySelector("svg")?.remove();
+    tip.style.opacity = 0;
+    const byDay = new Map();
+    for (const t of txs) {
+      const d = t.transaction_date;
+      if (!byDay.has(d)) byDay.set(d, { cl: 0, other: 0, n: 0 });
+      const r = byDay.get(d);
+      inCluster.has(t) ? (r.cl += t.total_value) : (r.other += t.total_value);
+      r.n++;
+    }
+    const svgNS = "http://www.w3.org/2000/svg";
+    const W = host.clientWidth || 800, H = 240, m = { t: 8, r: 4, b: 24, l: 48 };
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Daily insider purchase dollars, split into cluster and other purchases");
+    host.prepend(svg);
+    const mk = (tag, attrs, parent = svg) => {
+      const n = document.createElementNS(svgNS, tag);
+      for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+      parent.appendChild(n); return n;
+    };
+    if (!byDay.size) {
+      const t = mk("text", { x: W / 2, y: H / 2, "text-anchor": "middle", fill: "var(--text-3)", "font-size": 13 });
+      t.textContent = "No purchases match these filters";
+      return;
+    }
+    // Continuous calendar from first to last day so gaps (weekends) are honest.
+    const keys = [...byDay.keys()].sort();
+    const days = [];
+    for (let d = parseD(keys[0]); d <= parseD(keys[keys.length - 1]); d = new Date(+d + 864e5))
+      days.push(d.toISOString().slice(0, 10));
+    const max = Math.max(...days.map((d) => { const r = byDay.get(d); return r ? r.cl + r.other : 0; }));
+    const step = niceStep(max / 4), top = Math.ceil(max / step) * step || 1;
+    const iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const y = (v) => m.t + ih - (v / top) * ih;
+    const bw = iw / days.length, gap = Math.min(bw * 0.25, 6), barW = Math.max(bw - gap, 1);
+
+    const grid = mk("g", { class: "grid" }), ax = mk("g", { class: "axis" });
+    for (let v = 0; v <= top + 1e-6; v += step) {
+      mk("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v) }, grid);
+      const t = mk("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end" }, ax);
+      t.textContent = fmtUSD(v);
+    }
+    const every = Math.ceil(days.length / Math.max(2, Math.floor(iw / 70)));
+    days.forEach((d, i) => {
+      if (i % every) return;
+      const t = mk("text", { x: m.l + i * bw + bw / 2, y: H - 6, "text-anchor": "middle" }, ax);
+      t.textContent = fmtDate(d);
+    });
+
+    const r4 = Math.min(4, barW / 2);
+    days.forEach((d, i) => {
+      const r = byDay.get(d);
+      const g = mk("g", { class: "col", tabindex: r ? 0 : -1 });
+      const x = m.l + i * bw + gap / 2;
+      if (r) {
+        const yCl = y(r.cl), yTop = y(r.cl + r.other);
+        const clTopRound = r.other === 0;
+        if (r.cl > 0) mk("path", { class: "seg", d: barPath(x, yCl, barW, y(0) - yCl, clTopRound ? r4 : 0), fill: "var(--accent)" }, g);
+        if (r.other > 0) {
+          const h = (r.cl > 0 ? yCl - 2 : y(0)) - yTop; // 2px surface gap between segments
+          if (h > 0) mk("path", { class: "seg", d: barPath(x, yTop, barW, h, r4), fill: "var(--other)" }, g);
+        }
+      }
+      const hit = mk("rect", { class: "bar-hit", x: m.l + i * bw, y: m.t, width: bw, height: ih }, g);
+      const show = () => {
+        svg.querySelectorAll(".col.active").forEach((n) => n.classList.remove("active"));
+        g.classList.add("active");
+        tip.replaceChildren(
+          el("div", { class: "d", text: fmtDate(d, { weekday: "short", month: "short", day: "numeric", year: "numeric" }) }),
+          tipRow("var(--accent)", "Cluster buys", r ? fmtUSD(r.cl) : "$0"),
+          tipRow("var(--other)", "Other buys", r ? fmtUSD(r.other) : "$0"),
+          tipRow(null, "Filings", r ? String(r.n) : "0"),
+        );
+        const px = (m.l + i * bw + bw / 2) / W * host.clientWidth;
+        const left = Math.min(Math.max(px - 90, 0), host.clientWidth - 190);
+        tip.style.left = left + "px"; tip.style.top = "0px"; tip.style.opacity = 1;
+      };
+      const hide = () => { g.classList.remove("active"); tip.style.opacity = 0; };
+      hit.addEventListener("pointerenter", show);
+      hit.addEventListener("pointerleave", hide);
+      g.addEventListener("focus", show);
+      g.addEventListener("blur", hide);
+    });
+    mk("line", { x1: m.l, x2: W - m.r, y1: y(0), y2: y(0), stroke: "var(--text-3)" });
+  }
+  function tipRow(color, label, val) {
+    return el("div", { class: "row" },
+      el("span", {}, color ? el("i", { class: "key", style: `background:${color}` }) : null, label),
+      el("b", { text: val }));
+  }
+  function barPath(x, y, w, h, r) {
+    r = Math.min(r, h);
+    return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`;
+  }
+  function niceStep(raw) {
+    if (raw <= 0) return 1;
+    const p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p;
+    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p;
+  }
+
+  function renderClusters(clusters) {
+    const host = $("#clusters");
+    const sort = $("#sort").value;
+    const sorted = [...clusters].sort((a, b) =>
+      sort === "insiders" ? b.numInsiders - a.numInsiders || b.total - a.total
+      : sort === "recent" ? b.end.localeCompare(a.end) || b.total - a.total
+      : b.total - a.total);
+    if (!sorted.length) {
+      host.replaceChildren(el("div", { class: "card empty", style: "grid-column:1/-1" },
+        "No clusters match these filters. Try a lower dollar floor, fewer insiders, or a wider window."));
+      return;
+    }
+    const latest = DATA.reduce((m, t) => (t.transaction_date > m ? t.transaction_date : m), "");
+    host.replaceChildren(...sorted.map((c) => {
+      const maxV = Math.max(...c.txs.map((t) => t.total_value));
+      const span = dayDiff(c.start, c.end);
+      const ago = dayDiff(c.end, latest);
+      const rows = [...c.txs].sort((a, b) => b.total_value - a.total_value).map((t) =>
+        el("tr", {},
+          el("td", {},
+            el("div", { class: "who", text: titleCase(t.insider_name) }),
+            el("div", { class: "role", text: `${t.insider_title} · ${fmtDate(t.transaction_date)}` }),
+            el("div", { class: "bar", style: `width:${Math.max(4, (t.total_value / maxV) * 100)}%` })),
+          el("td", { class: "n", text: fmtUSD(t.total_value) })));
+      return el("article", { class: "card cl" },
+        el("div", { class: "cl-head" },
+          el("div", {},
+            el("div", { class: "tk", text: c.ticker }),
+            el("div", { class: "co", title: c.company, text: c.company })),
+          el("div", { class: "cl-total" },
+            el("div", { class: "num", text: fmtUSD(c.total) }),
+            el("div", { class: "sub", text: "combined" }))),
+        el("div", { class: "pills" },
+          el("span", { class: "pill hot", text: `${c.numInsiders} insiders` }),
+          el("span", { class: "pill", text: span ? `${fmtDate(c.start)} – ${fmtDate(c.end)}` : fmtDate(c.start) }),
+          el("span", { class: "pill", text: ago <= 0 ? "latest data" : `${ago}d ago` })),
+        el("table", { class: "mini" }, el("tbody", {}, ...rows)),
+        el("div", { class: "cl-links" },
+          el("a", { href: `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${encodeURIComponent(c.ticker)}&type=4&owner=include&count=40`, target: "_blank", rel: "noopener", text: "Form 4s on EDGAR ↗" }),
+          el("a", { href: `https://finance.yahoo.com/quote/${encodeURIComponent(c.ticker)}`, target: "_blank", rel: "noopener", text: "Chart ↗" })));
+    }));
+  }
+
+  // EDGAR names come in as "LAST FIRST MIDDLE" in all caps; soften the shouting.
+  function titleCase(s) {
+    return s === s.toUpperCase() ? s.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase()) : s;
+  }
+
+  function renderTable(txs, inCluster) {
+    const { sortKey, sortDir } = state;
+    const rows = [...txs].sort((a, b) => {
+      const x = a[sortKey], y = b[sortKey];
+      const c = typeof x === "number" ? x - y : String(x).localeCompare(String(y));
+      return c * sortDir || b.total_value - a.total_value;
+    });
+    document.querySelectorAll("#tbl th").forEach((th) => {
+      if (th.dataset.k === sortKey) th.setAttribute("aria-sort", sortDir > 0 ? "ascending" : "descending");
+      else th.removeAttribute("aria-sort");
+    });
+    const body = $("#tbl tbody");
+    body.replaceChildren(...rows.slice(0, state.shown).map((t) =>
+      el("tr", { class: inCluster.has(t) ? "in-cl" : "" },
+        el("td", { class: "mono", text: t.transaction_date }),
+        el("td", {}, el("button", { class: "tk-btn", type: "button", text: t.ticker || "—", onclick: () => { $("#q").value = t.ticker; state.shown = 50; render(); window.scrollTo({ top: 0, behavior: "smooth" }); } })),
+        el("td", { text: t.company_name }),
+        el("td", { text: titleCase(t.insider_name) }),
+        el("td", { text: t.insider_title }),
+        el("td", { class: "n", text: fmtNum(t.shares) }),
+        el("td", { class: "n", text: "$" + t.price_per_share.toFixed(2) }),
+        el("td", { class: "n", text: fmtFull(t.total_value) }))));
+    if (!rows.length) body.replaceChildren(el("tr", {}, el("td", { colspan: 8, class: "empty", text: "No purchases match these filters." })));
+    $("#more").hidden = rows.length <= state.shown;
+    $("#moreBtn").textContent = `Show more (${rows.length - state.shown} left)`;
+  }
+
+  document.querySelectorAll("#tbl th").forEach((th) => th.addEventListener("click", () => {
+    const k = th.dataset.k;
+    state.sortDir = state.sortKey === k ? -state.sortDir : (["ticker", "company_name", "insider_name", "insider_title"].includes(k) ? 1 : -1);
+    state.sortKey = k;
+    render();
+  }));
+  $("#moreBtn").addEventListener("click", () => { state.shown += 100; render(); });
+  ["#minVal", "#minIns", "#role", "#sort"].forEach((s) => $(s).addEventListener("change", () => { state.shown = 50; render(); }));
+  ["#win", "#q"].forEach((s) => $(s).addEventListener("input", () => { state.shown = 50; render(); }));
+  $("#reset").addEventListener("click", () => { applyDefaults(); $("#q").value = ""; $("#role").value = "all"; render(); });
+  let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(render, 120); });
+
+  function applyDefaults() {
+    $("#minVal").value = String(DEFAULTS.min_purchase_value ?? 50000);
+    $("#minIns").value = String(DEFAULTS.min_cluster_size ?? 2);
+    $("#win").value = String(DEFAULTS.cluster_window_days ?? 10);
+  }
+
+  fetch("data.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((d) => {
+      DATA = d.transactions;
+      DEFAULTS = d.defaults || {};
+      applyDefaults();
+      const gen = new Date(d.generated_at);
+      $("#updated").textContent = "Updated " + gen.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+      const dates = DATA.map((t) => t.transaction_date).sort();
+      if (dates.length) $("#range").textContent = `Purchases ${fmtDate(dates[0])} – ${fmtDate(dates[dates.length - 1], { month: "short", day: "numeric", year: "numeric" })}`;
+      render();
+    })
+    .catch((e) => {
+      $("#updated").textContent = "Could not load data.json";
+      $("#clusters").replaceChildren(el("div", { class: "card empty", style: "grid-column:1/-1", text: "Data failed to load (" + e.message + "). If you opened this file directly, serve it over HTTP instead." }));
+    });
+})();
+</script>
+</body>
+</html>
