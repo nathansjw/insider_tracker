@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T21:03:30+00:00",
+ "generated_at": "2026-10-21T16:07:00+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -457,6 +457,26 @@
    "total_value": 198915.0
   },
   {
+   "company_name": "DYNEX CAPITAL INC",
+   "ticker": "DX",
+   "insider_name": "Popenoe Smriti Laxman",
+   "insider_title": "Co-CEO and President",
+   "shares": 10000.0,
+   "price_per_share": 10.62,
+   "transaction_date": "2026-10-20",
+   "total_value": 106200.0
+  },
+  {
+   "company_name": "DYNEX CAPITAL INC",
+   "ticker": "DX",
+   "insider_name": "Popenoe Smriti Laxman",
+   "insider_title": "Co-CEO and President",
+   "shares": 2000.0,
+   "price_per_share": 25.18,
+   "transaction_date": "2026-10-20",
+   "total_value": 50360.0
+  },
+  {
    "company_name": "EURONET WORLDWIDE, INC.",
    "ticker": "EEFT",
    "insider_name": "MCDONNELL THOMAS A",
@@ -575,6 +595,16 @@
    "price_per_share": 160.61,
    "transaction_date": "2026-08-07",
    "total_value": 256976.0
+  },
+  {
+   "company_name": "EAGLE CAPITAL GROWTH FUND, INC.",
+   "ticker": "GRF",
+   "insider_name": "Sims David C",
+   "insider_title": "CFO, CCO, Secretary, Treasurer",
+   "shares": 7410.0,
+   "price_per_share": 10.03,
+   "transaction_date": "2026-10-16",
+   "total_value": 74322.3
   },
   {
    "company_name": "HUBSPOT INC",
