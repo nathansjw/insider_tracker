@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T16:00:50+00:00",
+ "generated_at": "2026-10-23T15:52:01+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -717,6 +717,16 @@
    "total_value": 826638.0
   },
   {
+   "company_name": "LIQTECH INTERNATIONAL INC",
+   "ticker": "LIQT",
+   "insider_name": "Boswell Peyton",
+   "insider_title": "Director",
+   "shares": 50000.0,
+   "price_per_share": 1.0,
+   "transaction_date": "2026-06-05",
+   "total_value": 50000.0
+  },
+  {
    "company_name": "Latigo Biotherapeutics, Inc.",
    "ticker": "LTGO",
    "insider_name": "Tananbaum James B.",
@@ -885,6 +895,46 @@
    "price_per_share": 26.1,
    "transaction_date": "2026-10-21",
    "total_value": 143550.0
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "MARAGANORE JOHN",
+   "insider_title": "Director",
+   "shares": 8239.0,
+   "price_per_share": 26.3799,
+   "transaction_date": "2026-10-22",
+   "total_value": 217344.0
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "PAUL STEVEN M",
+   "insider_title": "Director",
+   "shares": 35714.0,
+   "price_per_share": 27.28,
+   "transaction_date": "2026-10-22",
+   "total_value": 974277.92
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "Young Wendy B.",
+   "insider_title": "Director",
+   "shares": 3789.0,
+   "price_per_share": 26.39,
+   "transaction_date": "2026-10-22",
+   "total_value": 99991.71
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "Silva Paul M",
+   "insider_title": "Director",
+   "shares": 3680.0,
+   "price_per_share": 27.075,
+   "transaction_date": "2026-10-22",
+   "total_value": 99636.0
   },
   {
    "company_name": "RED RIVER BANCSHARES INC",
