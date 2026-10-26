@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T15:52:01+00:00",
+ "generated_at": "2026-10-26T17:34:12+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -377,6 +377,16 @@
    "total_value": 444500.0
   },
   {
+   "company_name": "CLEVELAND-CLIFFS INC.",
+   "ticker": "CLF",
+   "insider_name": "Camara Edilson",
+   "insider_title": "Director",
+   "shares": 7400.0,
+   "price_per_share": 13.49,
+   "transaction_date": "2026-10-22",
+   "total_value": 99826.0
+  },
+  {
    "company_name": "Cornerstone Strategic Investment Fund, Inc.",
    "ticker": "CLM",
    "insider_name": "Bradshaw Joshua",
@@ -455,6 +465,16 @@
    "price_per_share": 19.2,
    "transaction_date": "2026-08-05",
    "total_value": 3042432.0
+  },
+  {
+   "company_name": "Cascade Real Assets Fund",
+   "ticker": "CRAFX",
+   "insider_name": "Worley Matthew Eugene",
+   "insider_title": "Director",
+   "shares": 41909.531,
+   "price_per_share": 10.29,
+   "transaction_date": "2026-10-21",
+   "total_value": 431249.07
   },
   {
    "company_name": "CORNERSTONE TOTAL RETURN FUND INC",
@@ -827,6 +847,16 @@
    "total_value": 249984.0
   },
   {
+   "company_name": "NXG NextGen Infrastructure Income Fund",
+   "ticker": "NXG",
+   "insider_name": "Swank Jerry V",
+   "insider_title": "See Remarks",
+   "shares": 10000.0,
+   "price_per_share": 43.9493,
+   "transaction_date": "2026-10-23",
+   "total_value": 439493.0
+  },
+  {
    "company_name": "Origin Bancorp, Inc.",
    "ticker": "OBK",
    "insider_name": "Jones Cecil W.",
@@ -937,6 +967,36 @@
    "total_value": 99636.0
   },
   {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "Sanchez Ramiro",
+   "insider_title": "Director",
+   "shares": 3600.0,
+   "price_per_share": 27.3549,
+   "transaction_date": "2026-10-23",
+   "total_value": 98477.64
+  },
+  {
+   "company_name": "Rent the Runway, Inc.",
+   "ticker": "RENT",
+   "insider_name": "Nexus Capital Management LP",
+   "insider_title": "Director",
+   "shares": 632922.0,
+   "price_per_share": 3.55,
+   "transaction_date": "2026-10-21",
+   "total_value": 2246873.1
+  },
+  {
+   "company_name": "Rent the Runway, Inc.",
+   "ticker": "RENT",
+   "insider_name": "STORY3 Capital Partners, LLC",
+   "insider_title": "Director",
+   "shares": 632922.0,
+   "price_per_share": 3.55,
+   "transaction_date": "2026-10-21",
+   "total_value": 2246873.1
+  },
+  {
    "company_name": "RED RIVER BANCSHARES INC",
    "ticker": "RRBI",
    "insider_name": "Price Teddy Ray",
@@ -1005,6 +1065,16 @@
    "price_per_share": 56.0226,
    "transaction_date": "2026-08-07",
    "total_value": 280113.0
+  },
+  {
+   "company_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
+   "ticker": "[NONE]",
+   "insider_name": "GALLIGAN GREGORY T",
+   "insider_title": "CEO and President",
+   "shares": 5143.644,
+   "price_per_share": 19.4415,
+   "transaction_date": "2026-10-21",
+   "total_value": 100000.15
   }
  ]
 }
