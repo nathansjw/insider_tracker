@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-26T17:34:12+00:00",
+ "generated_at": "2026-10-27T16:49:49+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -117,6 +117,16 @@
    "total_value": 91400.0
   },
   {
+   "company_name": "Beacon Financial Corp",
+   "ticker": "BBT",
+   "insider_name": "Hollister Thomas J",
+   "insider_title": "Director",
+   "shares": 3450.0,
+   "price_per_share": 30.43,
+   "transaction_date": "2026-10-26",
+   "total_value": 104983.5
+  },
+  {
    "company_name": "BlossomHill Therapeutics, Inc.",
    "ticker": "BLSM",
    "insider_name": "Schmid John P.",
@@ -185,6 +195,26 @@
    "price_per_share": 12.2545,
    "transaction_date": "2026-10-21",
    "total_value": 1407600.89
+  },
+  {
+   "company_name": "Bluerock Private Real Estate Fund",
+   "ticker": "BPRE",
+   "insider_name": "KAMFAR RAMIN",
+   "insider_title": "Director",
+   "shares": 61028.0,
+   "price_per_share": 12.421,
+   "transaction_date": "2026-10-22",
+   "total_value": 758028.79
+  },
+  {
+   "company_name": "Bluerock Private Real Estate Fund",
+   "ticker": "BPRE",
+   "insider_name": "KAMFAR RAMIN",
+   "insider_title": "Director",
+   "shares": 109292.0,
+   "price_per_share": 12.5175,
+   "transaction_date": "2026-10-23",
+   "total_value": 1368062.61
   },
   {
    "company_name": "Braveheart Bio, Inc.",
@@ -375,6 +405,16 @@
    "price_per_share": 44.45,
    "transaction_date": "2026-08-06",
    "total_value": 444500.0
+  },
+  {
+   "company_name": "CitroTech Inc.",
+   "ticker": "CITR",
+   "insider_name": "HUFF CRAIG A",
+   "insider_title": "Director",
+   "shares": 200000.0,
+   "price_per_share": 2.5,
+   "transaction_date": "2026-10-22",
+   "total_value": 500000.0
   },
   {
    "company_name": "CLEVELAND-CLIFFS INC.",
@@ -787,6 +827,16 @@
    "total_value": 86400.0
   },
   {
+   "company_name": "Nebius Group N.V.",
+   "ticker": "NBIS",
+   "insider_name": "Grimme Arne",
+   "insider_title": "Director",
+   "shares": 357.0,
+   "price_per_share": 161.97,
+   "transaction_date": "2026-10-22",
+   "total_value": 57823.29
+  },
+  {
    "company_name": "Navios Maritime Partners L.P.",
    "ticker": "NMM",
    "insider_name": "Frangou Angeliki",
@@ -835,6 +885,16 @@
    "price_per_share": 23.68,
    "transaction_date": "2026-10-19",
    "total_value": 310906.58
+  },
+  {
+   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
+   "ticker": "NONE",
+   "insider_name": "Abrahams Riad M",
+   "insider_title": "Chief Executive Officer",
+   "shares": 31213.19,
+   "price_per_share": 25.47,
+   "transaction_date": "2026-10-22",
+   "total_value": 794999.95
   },
   {
    "company_name": "Neostellar Capital Corp.",
@@ -1015,6 +1075,46 @@
    "price_per_share": 57.4099,
    "transaction_date": "2026-08-07",
    "total_value": 249446.02
+  },
+  {
+   "company_name": "STEWART INFORMATION SERVICES CORP",
+   "ticker": "STC",
+   "insider_name": "BRADLEY C ALLEN JR",
+   "insider_title": "Director",
+   "shares": 2000.0,
+   "price_per_share": 47.3,
+   "transaction_date": "2026-10-23",
+   "total_value": 94600.0
+  },
+  {
+   "company_name": "STEWART INFORMATION SERVICES CORP",
+   "ticker": "STC",
+   "insider_name": "Corey William S. Jr.",
+   "insider_title": "Director",
+   "shares": 2000.0,
+   "price_per_share": 46.82,
+   "transaction_date": "2026-10-23",
+   "total_value": 93640.0
+  },
+  {
+   "company_name": "Gentherm Inc",
+   "ticker": "THRM",
+   "insider_name": "Presley William T.",
+   "insider_title": "President & CEO",
+   "shares": 5000.0,
+   "price_per_share": 26.0,
+   "transaction_date": "2026-10-23",
+   "total_value": 130000.0
+  },
+  {
+   "company_name": "Gentherm Inc",
+   "ticker": "THRM",
+   "insider_name": "MASCARENAS PAUL ANTHONY",
+   "insider_title": "Director",
+   "shares": 20000.0,
+   "price_per_share": 26.63,
+   "transaction_date": "2026-10-23",
+   "total_value": 532600.0
   },
   {
    "company_name": "TRANSCAT INC",
