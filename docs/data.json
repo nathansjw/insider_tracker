@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T16:49:49+00:00",
+ "generated_at": "2026-10-28T17:19:25+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -85,6 +85,46 @@
    "price_per_share": 5.86,
    "transaction_date": "2026-08-07",
    "total_value": 117200.0
+  },
+  {
+   "company_name": "AI OKTO Corp.",
+   "ticker": "AIOK",
+   "insider_name": "Panagiotidis Petros Panagiotis",
+   "insider_title": "Chief Executive Officer",
+   "shares": 79858.0,
+   "price_per_share": 6.0925,
+   "transaction_date": "2026-10-23",
+   "total_value": 486534.87
+  },
+  {
+   "company_name": "AI OKTO Corp.",
+   "ticker": "AIOK",
+   "insider_name": "Panagiotidis Petros Panagiotis",
+   "insider_title": "Chief Executive Officer",
+   "shares": 7340.0,
+   "price_per_share": 9.2527,
+   "transaction_date": "2026-10-23",
+   "total_value": 67914.82
+  },
+  {
+   "company_name": "AI OKTO Corp.",
+   "ticker": "AIOK",
+   "insider_name": "Panagiotidis Petros Panagiotis",
+   "insider_title": "Chief Executive Officer",
+   "shares": 7562.0,
+   "price_per_share": 9.9084,
+   "transaction_date": "2026-10-23",
+   "total_value": 74927.32
+  },
+  {
+   "company_name": "AI OKTO Corp.",
+   "ticker": "AIOK",
+   "insider_name": "Panagiotidis Petros Panagiotis",
+   "insider_title": "Chief Executive Officer",
+   "shares": 31370.0,
+   "price_per_share": 12.8777,
+   "transaction_date": "2026-10-23",
+   "total_value": 403973.45
   },
   {
    "company_name": "Applied Digital Corp.",
@@ -767,6 +807,16 @@
    "total_value": 11500000.0
   },
   {
+   "company_name": "KKR Income Opportunities Fund",
+   "ticker": "KIO",
+   "insider_name": "Takao Justin",
+   "insider_title": "Treasurer, CAO & CFO",
+   "shares": 5132.797,
+   "price_per_share": 9.75,
+   "transaction_date": "2026-10-23",
+   "total_value": 50044.77
+  },
+  {
    "company_name": "Lineage, Inc.",
    "ticker": "LINE",
    "insider_name": "LeMasters Robb A.",
@@ -785,6 +835,36 @@
    "price_per_share": 1.0,
    "transaction_date": "2026-06-05",
    "total_value": 50000.0
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Haggart Dylan G.",
+   "insider_title": "Director",
+   "shares": 59188.0,
+   "price_per_share": 79.84,
+   "transaction_date": "2026-10-23",
+   "total_value": 4725569.92
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Haggart Dylan G.",
+   "insider_title": "Director",
+   "shares": 4152.0,
+   "price_per_share": 78.47,
+   "transaction_date": "2026-10-26",
+   "total_value": 325807.44
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Haggart Dylan G.",
+   "insider_title": "Director",
+   "shares": 90856.0,
+   "price_per_share": 78.44,
+   "transaction_date": "2026-10-26",
+   "total_value": 7126744.64
   },
   {
    "company_name": "Latigo Biotherapeutics, Inc.",
@@ -827,6 +907,36 @@
    "total_value": 86400.0
   },
   {
+   "company_name": "MSC INDUSTRIAL DIRECT CO INC",
+   "ticker": "MSM",
+   "insider_name": "JACOBSON MITCHELL",
+   "insider_title": "Director",
+   "shares": 60951.0,
+   "price_per_share": 115.1094,
+   "transaction_date": "2026-10-23",
+   "total_value": 7016033.04
+  },
+  {
+   "company_name": "MSC INDUSTRIAL DIRECT CO INC",
+   "ticker": "MSM",
+   "insider_name": "JACOBSON MITCHELL",
+   "insider_title": "Director",
+   "shares": 134662.0,
+   "price_per_share": 115.995,
+   "transaction_date": "2026-10-23",
+   "total_value": 15620118.69
+  },
+  {
+   "company_name": "MSC INDUSTRIAL DIRECT CO INC",
+   "ticker": "MSM",
+   "insider_name": "JACOBSON MITCHELL",
+   "insider_title": "Director",
+   "shares": 54387.0,
+   "price_per_share": 116.7194,
+   "transaction_date": "2026-10-23",
+   "total_value": 6348018.01
+  },
+  {
    "company_name": "Nebius Group N.V.",
    "ticker": "NBIS",
    "insider_name": "Grimme Arne",
@@ -835,6 +945,16 @@
    "price_per_share": 161.97,
    "transaction_date": "2026-10-22",
    "total_value": 57823.29
+  },
+  {
+   "company_name": "Nuveen Municipal Credit Opportunities Fund",
+   "ticker": "NMCO",
+   "insider_name": "Robert Young L",
+   "insider_title": "Insider",
+   "shares": 28575.0,
+   "price_per_share": 8.7098,
+   "transaction_date": "2026-10-23",
+   "total_value": 248882.53
   },
   {
    "company_name": "Navios Maritime Partners L.P.",
@@ -897,6 +1017,36 @@
    "total_value": 794999.95
   },
   {
+   "company_name": "NORTHPOINTE BANCSHARES INC",
+   "ticker": "NPB",
+   "insider_name": "Boer Carrie L",
+   "insider_title": "Director",
+   "shares": 12000.0,
+   "price_per_share": 15.3968,
+   "transaction_date": "2026-10-23",
+   "total_value": 184761.6
+  },
+  {
+   "company_name": "NORTHPOINTE BANCSHARES INC",
+   "ticker": "NPB",
+   "insider_name": "Williams Charles Alan",
+   "insider_title": "CHAIRMAN & CEO",
+   "shares": 50000.0,
+   "price_per_share": 15.4243,
+   "transaction_date": "2026-10-23",
+   "total_value": 771215.0
+  },
+  {
+   "company_name": "NORTHPOINTE BANCSHARES INC",
+   "ticker": "NPB",
+   "insider_name": "Williams Charles Alan",
+   "insider_title": "CHAIRMAN & CEO",
+   "shares": 50000.0,
+   "price_per_share": 15.3235,
+   "transaction_date": "2026-10-26",
+   "total_value": 766175.0
+  },
+  {
    "company_name": "Neostellar Capital Corp.",
    "ticker": "NSLR",
    "insider_name": "Klein Mark D",
@@ -907,6 +1057,16 @@
    "total_value": 249984.0
   },
   {
+   "company_name": "NUVEEN MUNICIPAL VALUE FUND INC",
+   "ticker": "NUV",
+   "insider_name": "Robert Young L",
+   "insider_title": "Insider",
+   "shares": 36430.0,
+   "price_per_share": 8.2458,
+   "transaction_date": "2026-10-23",
+   "total_value": 300394.49
+  },
+  {
    "company_name": "NXG NextGen Infrastructure Income Fund",
    "ticker": "NXG",
    "insider_name": "Swank Jerry V",
@@ -915,6 +1075,16 @@
    "price_per_share": 43.9493,
    "transaction_date": "2026-10-23",
    "total_value": 439493.0
+  },
+  {
+   "company_name": "NUVEEN SELECT TAX FREE INCOME PORTFOLIO",
+   "ticker": "NXP",
+   "insider_name": "Robert Young L",
+   "insider_title": "Insider",
+   "shares": 22848.0,
+   "price_per_share": 13.1492,
+   "transaction_date": "2026-10-23",
+   "total_value": 300432.92
   },
   {
    "company_name": "Origin Bancorp, Inc.",
@@ -947,6 +1117,16 @@
    "total_value": 52036.68
   },
   {
+   "company_name": "PIMCO Dynamic Income Fund",
+   "ticker": "PDI",
+   "insider_name": "Morris Sonya",
+   "insider_title": "Director",
+   "shares": 5700.0,
+   "price_per_share": 14.32,
+   "transaction_date": "2026-10-23",
+   "total_value": 81624.0
+  },
+  {
    "company_name": "PIMCO Dynamic Income Strategy Fund",
    "ticker": "PDX",
    "insider_name": "STRACKE THIBAULT CHRISTIAN",
@@ -955,6 +1135,16 @@
    "price_per_share": 21.6187,
    "transaction_date": "2026-08-06",
    "total_value": 540467.5
+  },
+  {
+   "company_name": "Pluri Inc.",
+   "ticker": "PLUR",
+   "insider_name": "Manieu Alexandre Weinstein",
+   "insider_title": "Director",
+   "shares": 833334.0,
+   "price_per_share": 1.5,
+   "transaction_date": "2026-10-23",
+   "total_value": 1250001.0
   },
   {
    "company_name": "PROCEPT BioRobotics Corp",
@@ -1077,6 +1267,46 @@
    "total_value": 249446.02
   },
   {
+   "company_name": "Scholar Rock Holding Corp",
+   "ticker": "SRRK",
+   "insider_name": "AKKARAJU SRINIVAS",
+   "insider_title": "Director",
+   "shares": 47000.0,
+   "price_per_share": 41.31,
+   "transaction_date": "2026-10-23",
+   "total_value": 1941570.0
+  },
+  {
+   "company_name": "Scholar Rock Holding Corp",
+   "ticker": "SRRK",
+   "insider_name": "AKKARAJU SRINIVAS",
+   "insider_title": "Director",
+   "shares": 94000.0,
+   "price_per_share": 41.31,
+   "transaction_date": "2026-10-23",
+   "total_value": 3883140.0
+  },
+  {
+   "company_name": "Scholar Rock Holding Corp",
+   "ticker": "SRRK",
+   "insider_name": "AKKARAJU SRINIVAS",
+   "insider_title": "Director",
+   "shares": 48988.0,
+   "price_per_share": 41.59,
+   "transaction_date": "2026-10-26",
+   "total_value": 2037410.92
+  },
+  {
+   "company_name": "Scholar Rock Holding Corp",
+   "ticker": "SRRK",
+   "insider_name": "AKKARAJU SRINIVAS",
+   "insider_title": "Director",
+   "shares": 97982.0,
+   "price_per_share": 41.59,
+   "transaction_date": "2026-10-26",
+   "total_value": 4075071.38
+  },
+  {
    "company_name": "STEWART INFORMATION SERVICES CORP",
    "ticker": "STC",
    "insider_name": "BRADLEY C ALLEN JR",
@@ -1097,6 +1327,16 @@
    "total_value": 93640.0
   },
   {
+   "company_name": "STEWART INFORMATION SERVICES CORP",
+   "ticker": "STC",
+   "insider_name": "EPPINGER FREDERICK H",
+   "insider_title": "Chief Executive Officer",
+   "shares": 3000.0,
+   "price_per_share": 44.45,
+   "transaction_date": "2026-10-26",
+   "total_value": 133350.0
+  },
+  {
    "company_name": "Gentherm Inc",
    "ticker": "THRM",
    "insider_name": "Presley William T.",
@@ -1115,6 +1355,16 @@
    "price_per_share": 26.63,
    "transaction_date": "2026-10-23",
    "total_value": 532600.0
+  },
+  {
+   "company_name": "TIPTREE INC.",
+   "ticker": "TIPT",
+   "insider_name": "Barnes Michael Gene",
+   "insider_title": "Chairman and CEO",
+   "shares": 30930.0,
+   "price_per_share": 16.24,
+   "transaction_date": "2026-10-23",
+   "total_value": 502303.2
   },
   {
    "company_name": "TRANSCAT INC",
