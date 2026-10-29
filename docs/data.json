@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T17:19:25+00:00",
+ "generated_at": "2026-10-29T17:34:17+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -45,6 +45,36 @@
    "price_per_share": 6.1873,
    "transaction_date": "2026-08-06",
    "total_value": 1005052.64
+  },
+  {
+   "company_name": "Accenture plc",
+   "ticker": "ACN",
+   "insider_name": "Price Paula A",
+   "insider_title": "Director",
+   "shares": 800.0,
+   "price_per_share": 249.8097,
+   "transaction_date": "2026-10-26",
+   "total_value": 199847.76
+  },
+  {
+   "company_name": "Accenture plc",
+   "ticker": "ACN",
+   "insider_name": "Sweet Julie Spellman",
+   "insider_title": "Chair and CEO",
+   "shares": 2100.0,
+   "price_per_share": 245.1063,
+   "transaction_date": "2026-10-26",
+   "total_value": 514723.23
+  },
+  {
+   "company_name": "Accenture plc",
+   "ticker": "ACN",
+   "insider_name": "Sweet Julie Spellman",
+   "insider_title": "Chair and CEO",
+   "shares": 10100.0,
+   "price_per_share": 246.1701,
+   "transaction_date": "2026-10-26",
+   "total_value": 2486318.01
   },
   {
    "company_name": "ADTRAN Holdings, Inc.",
@@ -255,6 +285,26 @@
    "price_per_share": 12.5175,
    "transaction_date": "2026-10-23",
    "total_value": 1368062.61
+  },
+  {
+   "company_name": "Bluerock Private Real Estate Fund",
+   "ticker": "BPRE",
+   "insider_name": "KAMFAR RAMIN",
+   "insider_title": "Director",
+   "shares": 109019.0,
+   "price_per_share": 12.4769,
+   "transaction_date": "2026-10-26",
+   "total_value": 1360219.16
+  },
+  {
+   "company_name": "Bluerock Private Real Estate Fund",
+   "ticker": "BPRE",
+   "insider_name": "KAMFAR RAMIN",
+   "insider_title": "Director",
+   "shares": 69658.0,
+   "price_per_share": 12.4825,
+   "transaction_date": "2026-10-27",
+   "total_value": 869505.98
   },
   {
    "company_name": "Braveheart Bio, Inc.",
@@ -787,6 +837,26 @@
    "total_value": 74322.3
   },
   {
+   "company_name": "HUNTINGTON BANCSHARES INC /MD/",
+   "ticker": "HBAN",
+   "insider_name": "ROLLINS JAMES D III",
+   "insider_title": "Director",
+   "shares": 4000.0,
+   "price_per_share": 14.855,
+   "transaction_date": "2026-10-26",
+   "total_value": 59420.0
+  },
+  {
+   "company_name": "HUNTINGTON BANCSHARES INC /MD/",
+   "ticker": "HBAN",
+   "insider_name": "ROLLINS JAMES D III",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 19.43,
+   "transaction_date": "2026-10-26",
+   "total_value": 194300.0
+  },
+  {
    "company_name": "HUBSPOT INC",
    "ticker": "HUBS",
    "insider_name": "Dischler Gerald",
@@ -795,6 +865,26 @@
    "price_per_share": 215.93,
    "transaction_date": "2026-08-10",
    "total_value": 199735.25
+  },
+  {
+   "company_name": "HEXCEL CORP /DE/",
+   "ticker": "HXL",
+   "insider_name": "KEATING NEAL J.",
+   "insider_title": "Director",
+   "shares": 3000.0,
+   "price_per_share": 80.67,
+   "transaction_date": "2026-10-26",
+   "total_value": 242010.0
+  },
+  {
+   "company_name": "HYCROFT MINING HOLDING CORP",
+   "ticker": "HYMC",
+   "insider_name": "Rhodes Blake",
+   "insider_title": "Director",
+   "shares": 3000.0,
+   "price_per_share": 16.6917,
+   "transaction_date": "2026-10-28",
+   "total_value": 50075.1
   },
   {
    "company_name": "Iambic Therapeutics, Inc.",
@@ -815,6 +905,16 @@
    "price_per_share": 9.75,
    "transaction_date": "2026-10-23",
    "total_value": 50044.77
+  },
+  {
+   "company_name": "Liberty Energy Inc.",
+   "ticker": "LBRT",
+   "insider_name": "Babcock Ken",
+   "insider_title": "Director",
+   "shares": 14500.0,
+   "price_per_share": 15.4,
+   "transaction_date": "2026-10-26",
+   "total_value": 223300.0
   },
   {
    "company_name": "Lineage, Inc.",
@@ -1087,6 +1187,16 @@
    "total_value": 300432.92
   },
   {
+   "company_name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
+   "ticker": "NYSE:FLG",
+   "insider_name": "Frank Alan L",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 10.14,
+   "transaction_date": "2026-10-27",
+   "total_value": 101400.0
+  },
+  {
    "company_name": "Origin Bancorp, Inc.",
    "ticker": "OBK",
    "insider_name": "Jones Cecil W.",
@@ -1225,6 +1335,16 @@
    "price_per_share": 27.3549,
    "transaction_date": "2026-10-23",
    "total_value": 98477.64
+  },
+  {
+   "company_name": "RedCloud Holdings plc",
+   "ticker": "RCT",
+   "insider_name": "Senn Nikolaus Beat",
+   "insider_title": "Director",
+   "shares": 1700000.0,
+   "price_per_share": 0.25,
+   "transaction_date": "2026-10-28",
+   "total_value": 425000.0
   },
   {
    "company_name": "Rent the Runway, Inc.",
@@ -1377,6 +1497,36 @@
    "total_value": 98663.25
   },
   {
+   "company_name": "TTM TECHNOLOGIES INC",
+   "ticker": "TTMI",
+   "insider_name": "Ali Wajid",
+   "insider_title": "Director",
+   "shares": 5000.0,
+   "price_per_share": 89.8571,
+   "transaction_date": "2026-10-28",
+   "total_value": 449285.5
+  },
+  {
+   "company_name": "TTM TECHNOLOGIES INC",
+   "ticker": "TTMI",
+   "insider_name": "Ali Wajid",
+   "insider_title": "Director",
+   "shares": 5000.0,
+   "price_per_share": 90.635,
+   "transaction_date": "2026-10-28",
+   "total_value": 453175.0
+  },
+  {
+   "company_name": "TTM TECHNOLOGIES INC",
+   "ticker": "TTMI",
+   "insider_name": "Roks Edwin",
+   "insider_title": "President and CEO",
+   "shares": 5000.0,
+   "price_per_share": 88.07,
+   "transaction_date": "2026-10-28",
+   "total_value": 440350.0
+  },
+  {
    "company_name": "UNITED COMMUNITY BANKS INC",
    "ticker": "UCB",
    "insider_name": "Carande Carl Steven",
@@ -1415,6 +1565,16 @@
    "price_per_share": 56.0226,
    "transaction_date": "2026-08-07",
    "total_value": 280113.0
+  },
+  {
+   "company_name": "XBiotech Inc.",
+   "ticker": "XBIT",
+   "insider_name": "SIMARD JOHN",
+   "insider_title": "Director",
+   "shares": 368524.0,
+   "price_per_share": 1.93,
+   "transaction_date": "2026-10-26",
+   "total_value": 711251.32
   },
   {
    "company_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
