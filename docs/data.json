@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T17:34:17+00:00",
+ "generated_at": "2026-10-30T17:09:25+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -195,6 +195,26 @@
    "price_per_share": 30.43,
    "transaction_date": "2026-10-26",
    "total_value": 104983.5
+  },
+  {
+   "company_name": "Beacon Financial Corp",
+   "ticker": "BBT",
+   "insider_name": "Callahan Mary Anne",
+   "insider_title": "Director",
+   "shares": 3200.0,
+   "price_per_share": 30.21,
+   "transaction_date": "2026-10-28",
+   "total_value": 96672.0
+  },
+  {
+   "company_name": "Bank First Corp",
+   "ticker": "BFC",
+   "insider_name": "Sprang Todd A.",
+   "insider_title": "Director",
+   "shares": 400.0,
+   "price_per_share": 148.37,
+   "transaction_date": "2026-10-28",
+   "total_value": 59348.0
   },
   {
    "company_name": "BlossomHill Therapeutics, Inc.",
@@ -647,6 +667,16 @@
    "total_value": 118677.6
   },
   {
+   "company_name": "HF Sinclair Corp",
+   "ticker": "DINO",
+   "insider_name": "MYERS FRANKLIN",
+   "insider_title": "CEO",
+   "shares": 10000.0,
+   "price_per_share": 110.8,
+   "transaction_date": "2026-10-29",
+   "total_value": 1108000.0
+  },
+  {
    "company_name": "DT Midstream, Inc.",
    "ticker": "DTM",
    "insider_name": "Pickle Elaine M",
@@ -857,6 +887,16 @@
    "total_value": 194300.0
   },
   {
+   "company_name": "HUNTINGTON BANCSHARES INC /MD/",
+   "ticker": "HBAN",
+   "insider_name": "TORGOW GARY",
+   "insider_title": "Director",
+   "shares": 12700.0,
+   "price_per_share": 15.735,
+   "transaction_date": "2026-10-27",
+   "total_value": 199834.5
+  },
+  {
    "company_name": "HUBSPOT INC",
    "ticker": "HUBS",
    "insider_name": "Dischler Gerald",
@@ -965,6 +1005,16 @@
    "price_per_share": 78.44,
    "transaction_date": "2026-10-26",
    "total_value": 7126744.64
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Haggart Dylan G.",
+   "insider_title": "Director",
+   "shares": 792.0,
+   "price_per_share": 78.52,
+   "transaction_date": "2026-10-27",
+   "total_value": 62187.84
   },
   {
    "company_name": "Latigo Biotherapeutics, Inc.",
@@ -1257,6 +1307,16 @@
    "total_value": 1250001.0
   },
   {
+   "company_name": "Pinnacle Financial Partners, Inc.",
+   "ticker": "PNFP",
+   "insider_name": "INGRAM DAVID B",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 99.16,
+   "transaction_date": "2026-10-28",
+   "total_value": 991600.0
+  },
+  {
    "company_name": "PROCEPT BioRobotics Corp",
    "ticker": "PRCT",
    "insider_name": "Wood Larry L",
@@ -1377,6 +1437,16 @@
    "total_value": 93896.6
   },
   {
+   "company_name": "SPACCircle Acquisition Corp.",
+   "ticker": "SCQCU",
+   "insider_name": "Das Soumen",
+   "insider_title": "Director",
+   "shares": 266590.0,
+   "price_per_share": 10.0,
+   "transaction_date": "2026-10-28",
+   "total_value": 2665900.0
+  },
+  {
    "company_name": "SONOCO PRODUCTS CO",
    "ticker": "SON",
    "insider_name": "Coker R. Howard",
@@ -1455,6 +1525,16 @@
    "price_per_share": 44.45,
    "transaction_date": "2026-10-26",
    "total_value": 133350.0
+  },
+  {
+   "company_name": "TRUIST FINANCIAL CORP",
+   "ticker": "TFC",
+   "insider_name": "Lyons Michael P.",
+   "insider_title": "President & CEO",
+   "shares": 25000.0,
+   "price_per_share": 48.362,
+   "transaction_date": "2026-10-28",
+   "total_value": 1209050.0
   },
   {
    "company_name": "Gentherm Inc",
@@ -1537,6 +1617,16 @@
    "total_value": 74270.35
   },
   {
+   "company_name": "UTAH MEDICAL PRODUCTS INC",
+   "ticker": "UTMD",
+   "insider_name": "CORNWELL KEVIN L",
+   "insider_title": "Chairman, CEO",
+   "shares": 1000.0,
+   "price_per_share": 66.75,
+   "transaction_date": "2026-10-29",
+   "total_value": 66750.0
+  },
+  {
    "company_name": "VEON Ltd.",
    "ticker": "VEON",
    "insider_name": "Fabela Augie K II",
@@ -1575,6 +1665,16 @@
    "price_per_share": 1.93,
    "transaction_date": "2026-10-26",
    "total_value": 711251.32
+  },
+  {
+   "company_name": "Xylem Inc.",
+   "ticker": "XYL",
+   "insider_name": "KOCH D CHRISTIAN",
+   "insider_title": "Director",
+   "shares": 11000.0,
+   "price_per_share": 89.6,
+   "transaction_date": "2026-10-29",
+   "total_value": 985600.0
   },
   {
    "company_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
