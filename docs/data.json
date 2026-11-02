@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T17:09:25+00:00",
+ "generated_at": "2026-11-02T20:55:34+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -215,6 +215,16 @@
    "price_per_share": 148.37,
    "transaction_date": "2026-10-28",
    "total_value": 59348.0
+  },
+  {
+   "company_name": "BREAD FINANCIAL HOLDINGS, INC.",
+   "ticker": "BFH",
+   "insider_name": "Fawcett John J.",
+   "insider_title": "Director",
+   "shares": 3000.0,
+   "price_per_share": 24.69,
+   "transaction_date": "2026-10-28",
+   "total_value": 74070.0
   },
   {
    "company_name": "BlossomHill Therapeutics, Inc.",
@@ -827,6 +837,16 @@
    "total_value": 716453.9
   },
   {
+   "company_name": "FIRST FINANCIAL BANKSHARES INC",
+   "ticker": "FFIN",
+   "insider_name": "Denny Michael B.",
+   "insider_title": "Director",
+   "shares": 3245.0,
+   "price_per_share": 30.76,
+   "transaction_date": "2026-10-29",
+   "total_value": 99816.2
+  },
+  {
    "company_name": "GBank Financial Holdings Inc.",
    "ticker": "GBFH",
    "insider_name": "Griege Charles William Jr.",
@@ -1047,6 +1067,16 @@
    "total_value": 100174.86
   },
   {
+   "company_name": "MEDIFAST INC",
+   "ticker": "MED",
+   "insider_name": "Kiai Parsa",
+   "insider_title": "Director",
+   "shares": 5399.0,
+   "price_per_share": 12.2417,
+   "transaction_date": "2026-10-28",
+   "total_value": 66092.94
+  },
+  {
    "company_name": "Millrose Properties, Inc.",
    "ticker": "MRP",
    "insider_name": "Gorson Matthew B.",
@@ -1257,6 +1287,16 @@
    "total_value": 199282.0
   },
   {
+   "company_name": "OCEANFIRST FINANCIAL CORP",
+   "ticker": "OCFC",
+   "insider_name": "Barrett Patrick Sean",
+   "insider_title": "Senior EVP & CFO",
+   "shares": 5000.0,
+   "price_per_share": 17.9,
+   "transaction_date": "2026-10-30",
+   "total_value": 89500.0
+  },
+  {
    "company_name": "OneMedNet Corp",
    "ticker": "ONMD",
    "insider_name": "Kosasa Thomas",
@@ -1395,6 +1435,46 @@
    "price_per_share": 27.3549,
    "transaction_date": "2026-10-23",
    "total_value": 98477.64
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "HEALY JAMES",
+   "insider_title": "Director",
+   "shares": 952380.0,
+   "price_per_share": 21.0,
+   "transaction_date": "2026-10-28",
+   "total_value": 19999980.0
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "HEALY JAMES",
+   "insider_title": "Director",
+   "shares": 6395.0,
+   "price_per_share": 21.0,
+   "transaction_date": "2026-10-28",
+   "total_value": 134295.0
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "HEALY JAMES",
+   "insider_title": "Director",
+   "shares": 3772.0,
+   "price_per_share": 21.0,
+   "transaction_date": "2026-10-28",
+   "total_value": 79212.0
+  },
+  {
+   "company_name": "Rapport Therapeutics, Inc.",
+   "ticker": "RAPP",
+   "insider_name": "HEALY JAMES",
+   "insider_title": "Director",
+   "shares": 6933.0,
+   "price_per_share": 21.0,
+   "transaction_date": "2026-10-28",
+   "total_value": 145593.0
   },
   {
    "company_name": "RedCloud Holdings plc",
