@@ -36,6 +36,11 @@ DB_PATH = "insider_tracker.db"
 # so keep this reasonably tight and run daily)
 LOOKBACK_DAYS = int(os.environ.get("LOOKBACK_DAYS", 3))
 
+# Optional one-off backfill: if BACKFILL_START is set (YYYY-MM-DD), fetch every weekday
+# from BACKFILL_START to BACKFILL_END (default today) instead of using LOOKBACK_DAYS.
+BACKFILL_START = os.environ.get("BACKFILL_START", "")
+BACKFILL_END = os.environ.get("BACKFILL_END", "")
+
 #Alert delivery
 ALERT_METHOD = os.environ.get("ALERT_METHOD", "ntfy")  # "console", "email", "slack", or "ntfy"
 

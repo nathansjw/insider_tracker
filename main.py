@@ -43,7 +43,7 @@ def run():
     print(f"Found {len(filings)} filings. Parsing each for qualifying purchases...")
 
     def process_filing(filing):
-        xml_content = fetch_form4_xml(filing["index_url"])
+        xml_content = fetch_form4_xml(filing)
         if not xml_content:
             return 0
 

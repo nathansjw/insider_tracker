@@ -17,7 +17,7 @@ import time
 from collections import deque
 from datetime import datetime, timedelta
 
-from config import SEC_USER_AGENT, LOOKBACK_DAYS
+from config import SEC_USER_AGENT, LOOKBACK_DAYS, BACKFILL_START, BACKFILL_END
 
 HEADERS = {"User-Agent": SEC_USER_AGENT}
 
@@ -42,7 +42,7 @@ class RateLimiter:
                 time.sleep(self.timestamps[0] + 1 - now)
 
 
-_rate_limiter = RateLimiter(max_per_second=8)  # stay under SEC's ~10/sec limit
+_rate_limiter = RateLimiter(max_per_second=9)  # stay under SEC's 10/sec limit
 
 
 def _get(url, **kwargs):
@@ -61,7 +61,19 @@ ACCESSION_RE = re.compile(r"(\d{10}-\d{2}-\d{6})\.txt$")
 
 
 def _business_days_back(n_days: int) -> list:
-    """Returns the last n_days calendar days that are weekdays (SEC doesn't file on weekends)."""
+    """Returns the last n_days calendar days that are weekdays (SEC doesn't file on weekends).
+
+    If BACKFILL_START/BACKFILL_END are set, returns every weekday in that range instead.
+    """
+    if BACKFILL_START:
+        start = datetime.strptime(BACKFILL_START, "%Y-%m-%d").date()
+        end = datetime.strptime(BACKFILL_END, "%Y-%m-%d").date() if BACKFILL_END else datetime.utcnow().date()
+        days, d = [], end
+        while d >= start:
+            if d.weekday() < 5:
+                days.append(d)
+            d -= timedelta(days=1)
+        return days
     days = []
     d = datetime.utcnow().date()
     while len(days) < n_days:
@@ -117,15 +129,34 @@ def get_recent_form4_filings(lookback_days: int = LOOKBACK_DAYS) -> list[dict]:
                         f"https://www.sec.gov/Archives/edgar/data/"
                         f"{cik}/{accession_no_nodash}/"
                     ),
+                    "txt_url": f"https://www.sec.gov/Archives/{path}",
                 }
             )
 
     return filings
 
-def fetch_form4_xml(filing_index_url: str) -> str | None:
+XML_BLOCK_RE = re.compile(r"<XML>\s*(.*?)\s*</XML>", re.DOTALL)
+
+
+def fetch_form4_xml(filing) -> str | None:
     """
-    Given a filing's index directory URL, find and fetch the actual Form 4 XML document.
+    Fetch a filing's Form 4 XML document.
+
+    Given a filing dict from get_recent_form4_filings, pulls the full submission
+    .txt (one request) and extracts the embedded <XML> block. Given a bare index
+    directory URL, or if the .txt has no XML block, falls back to index.json + XML
+    (two requests).
     """
+    if isinstance(filing, dict):
+        if filing.get("txt_url"):
+            resp = _get(filing["txt_url"], timeout=20)
+            if resp.status_code == 200:
+                m = XML_BLOCK_RE.search(resp.text)
+                if m:
+                    return m.group(1)
+        filing_index_url = filing["index_url"]
+    else:
+        filing_index_url = filing
     json_url = filing_index_url + "index.json"
     idx_resp = _get(json_url, timeout=15)
     if idx_resp.status_code != 200:
