@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T02:53:58+00:00",
+ "generated_at": "2026-11-03T18:34:02+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -565,6 +565,16 @@
    "price_per_share": 7.6,
    "transaction_date": "2026-08-06",
    "total_value": 50000.4
+  },
+  {
+   "company_name": "AUDIOEYE INC",
+   "ticker": "AEYE",
+   "insider_name": "HAWKINS JAMES B",
+   "insider_title": "Director",
+   "shares": 4000.0,
+   "price_per_share": 13.15,
+   "transaction_date": "2026-10-30",
+   "total_value": 52600.0
   },
   {
    "company_name": "Advanced Flower Capital Inc.",
@@ -1817,6 +1827,16 @@
    "total_value": 1013150.0
   },
   {
+   "company_name": "Alphatec Holdings, Inc.",
+   "ticker": "ATEC",
+   "insider_name": "Demski David M",
+   "insider_title": "Director",
+   "shares": 60000.0,
+   "price_per_share": 6.81,
+   "transaction_date": "2026-10-30",
+   "total_value": 408600.0
+  },
+  {
    "company_name": "Atmus Filtration Technologies Inc.",
    "ticker": "ATMU",
    "insider_name": "Macadam Stephen E.",
@@ -2275,6 +2295,16 @@
    "price_per_share": 1.0944,
    "transaction_date": "2026-09-01",
    "total_value": 109440.0
+  },
+  {
+   "company_name": "BANC OF CALIFORNIA, INC.",
+   "ticker": "BANC",
+   "insider_name": "WOLFF JARED M",
+   "insider_title": "CHAIRMAN AND CEO",
+   "shares": 5487.0,
+   "price_per_share": 18.18,
+   "transaction_date": "2026-10-30",
+   "total_value": 99753.66
   },
   {
    "company_name": "BATTALION OIL CORP",
@@ -2827,6 +2857,16 @@
    "total_value": 96672.0
   },
   {
+   "company_name": "Bambusa Therapeutics, Inc.",
+   "ticker": "BBTX",
+   "insider_name": "Jeggle Helmut Wolfgang",
+   "insider_title": "Director",
+   "shares": 375000.0,
+   "price_per_share": 16.0,
+   "transaction_date": "2026-11-02",
+   "total_value": 6000000.0
+  },
+  {
    "company_name": "BCB BANCORP INC",
    "ticker": "BCBP",
    "insider_name": "Chaudhry Jawad",
@@ -3035,6 +3075,16 @@
    "price_per_share": 55.0,
    "transaction_date": "2026-08-28",
    "total_value": 79970.0
+  },
+  {
+   "company_name": "BLADEX, INC.",
+   "ticker": "BLX",
+   "insider_name": "Diaz Adriana Lizzeth",
+   "insider_title": "Chief Audit Officer",
+   "shares": 1792.0,
+   "price_per_share": 52.39,
+   "transaction_date": "2026-10-30",
+   "total_value": 93882.88
   },
   {
    "company_name": "BIOMERICA INC",
@@ -5777,6 +5827,16 @@
    "total_value": 249620.25
   },
   {
+   "company_name": "Enphase Energy, Inc.",
+   "ticker": "ENPH",
+   "insider_name": "Kothandaraman Badrinarayanan",
+   "insider_title": "President & CEO",
+   "shares": 10000.0,
+   "price_per_share": 26.7514,
+   "transaction_date": "2026-11-02",
+   "total_value": 267514.0
+  },
+  {
    "company_name": "Ensysce Biosciences, Inc.",
    "ticker": "ENSC",
    "insider_name": "GOWER BOB G",
@@ -6135,6 +6195,16 @@
    "price_per_share": 2168.1319,
    "transaction_date": "2026-08-19",
    "total_value": 99734.07
+  },
+  {
+   "company_name": "Four Corners Property Trust, Inc.",
+   "ticker": "FCPT",
+   "insider_name": "Lenehan William H",
+   "insider_title": "President and CEO",
+   "shares": 10000.0,
+   "price_per_share": 22.6072,
+   "transaction_date": "2026-11-02",
+   "total_value": 226072.0
   },
   {
    "company_name": "5E Advanced Materials, Inc.",
@@ -7957,6 +8027,16 @@
    "total_value": 1001591.64
   },
   {
+   "company_name": "JETBLUE AIRWAYS CORP",
+   "ticker": "JBLU",
+   "insider_name": "BONEPARTH PETER",
+   "insider_title": "Director",
+   "shares": 100000.0,
+   "price_per_share": 3.0,
+   "transaction_date": "2026-10-29",
+   "total_value": 300000.0
+  },
+  {
    "company_name": "Jushi Holdings Inc.",
    "ticker": "JUSH",
    "insider_name": "Cacioppo James",
@@ -9267,6 +9347,16 @@
    "total_value": 65005.6
   },
   {
+   "company_name": "LANDSTAR SYSTEM INC",
+   "ticker": "LSTR",
+   "insider_name": "Lonegro Frank A",
+   "insider_title": "President & CEO",
+   "shares": 5000.0,
+   "price_per_share": 142.9238,
+   "transaction_date": "2026-10-30",
+   "total_value": 714619.0
+  },
+  {
    "company_name": "LTC PROPERTIES INC",
    "ticker": "LTC",
    "insider_name": "Gruber David L",
@@ -10445,6 +10535,16 @@
    "price_per_share": 17.9,
    "transaction_date": "2026-10-30",
    "total_value": 89500.0
+  },
+  {
+   "company_name": "OCEANFIRST FINANCIAL CORP",
+   "ticker": "OCFC",
+   "insider_name": "Katsoulis Nicos",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 17.8277,
+   "transaction_date": "2026-10-30",
+   "total_value": 178277.0
   },
   {
    "company_name": "Odysight.ai Inc.",
@@ -11647,6 +11747,16 @@
    "total_value": 100488.0
   },
   {
+   "company_name": "Ribbon Communications Inc.",
+   "ticker": "RBBN",
+   "insider_name": "McClelland Bruce William",
+   "insider_title": "President & CEO",
+   "shares": 60000.0,
+   "price_per_share": 1.604,
+   "transaction_date": "2026-10-30",
+   "total_value": 96240.0
+  },
+  {
    "company_name": "RedCloud Holdings plc",
    "ticker": "RCT",
    "insider_name": "Senn Nikolaus Beat",
@@ -11905,6 +12015,16 @@
    "price_per_share": 99.89,
    "transaction_date": "2026-08-10",
    "total_value": 93896.6
+  },
+  {
+   "company_name": "Rush Street Interactive, Inc.",
+   "ticker": "RSI",
+   "insider_name": "Winter Thomas",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 11.831,
+   "transaction_date": "2026-11-02",
+   "total_value": 118310.0
   },
   {
    "company_name": "Retension Pharmaceuticals, Inc.",
@@ -12175,6 +12295,16 @@
    "price_per_share": 8.98,
    "transaction_date": "2026-08-19",
    "total_value": 125300.49
+  },
+  {
+   "company_name": "Seven Hills Realty Trust",
+   "ticker": "SEVN",
+   "insider_name": "Jordan Matthew P.",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 6.56,
+   "transaction_date": "2026-10-30",
+   "total_value": 65600.0
   },
   {
    "company_name": "SOMNIGROUP INTERNATIONAL INC.",
