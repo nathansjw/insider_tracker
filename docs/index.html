@@ -1168,7 +1168,8 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
 
   /* ---------------- Drawer ---------------- */
   let lastFocus = null;
-  function openDrawer(c) {
+  function openDrawer(c, fromRoute = false) {
+    if (!fromRoute) { history.replaceState(null, "", `#${state.view}/${c.ticker}`); }
     lastFocus = document.activeElement;
     const dr = $("#drawer"), scrim = $("#scrim");
     const span = dayDiff(c.start, c.end);
@@ -1190,7 +1191,7 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
         el("div", { class: "meta" },
           el("div", { style: "display:flex;align-items:center;gap:10px;flex-wrap:wrap" }, el("div", { class: "tk", id: "drTitle", text: c.ticker }), strengthTag(c.score)),
           el("div", { class: "co", text: c.company })),
-        el("button", { class: "icon-btn", type: "button", "aria-label": "Close", onclick: closeDrawer }, icon("x"))),
+        el("button", { class: "icon-btn", type: "button", "aria-label": "Close", onclick: () => closeDrawer() }, icon("x"))),
       el("div", { class: "dr-body" },
         el("div", { style: "display:flex;gap:16px;align-items:center;margin-bottom:16px" }, ring(c.score),
           el("div", { style: "font-size:13.5px;color:var(--text-2)" },
@@ -1218,15 +1219,16 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
   }
   const drKpi = (k, v) => el("div", { class: "dr-kpi" }, el("div", { class: "k", text: k }), el("div", { class: "v", text: v }));
   const extBtn = (label, href) => el("a", { class: "btn", href, target: "_blank", rel: "noopener" }, label, icon("ext"));
-  function closeDrawer() {
+  function closeDrawer(fromRoute = false) {
     const dr = $("#drawer"), scrim = $("#scrim");
     if (dr.hidden) return;
+    if (fromRoute !== true && location.hash.includes("/")) history.replaceState(null, "", "#" + state.view);
     dr.classList.remove("on"); scrim.classList.remove("on");
     document.body.style.overflow = "";
     setTimeout(() => { dr.hidden = true; scrim.hidden = true; }, 220);
     lastFocus?.focus?.();
   }
-  $("#scrim").addEventListener("click", closeDrawer);
+  $("#scrim").addEventListener("click", () => closeDrawer());
   addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeDrawer();
     if (e.key === "/" && document.activeElement.tagName !== "INPUT") { e.preventDefault(); $("#q").focus(); }
@@ -1235,8 +1237,10 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
   /* ---------------- Routing ---------------- */
   const VIEWS = ["overview", "clusters", "purchases", "method"];
   function go(v) { if (location.hash !== "#" + v) location.hash = v; else route(); }
+  // Deep links: #clusters/TICKER opens that company's cluster detail.
   function route() {
-    const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "overview";
+    const [hv, tk] = location.hash.slice(1).split("/");
+    const v = VIEWS.includes(hv) ? hv : "overview";
     const changed = state.view !== v;
     state.view = v;
     $$(".view").forEach((s) => (s.hidden = s.dataset.view !== v));
@@ -1245,6 +1249,10 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
     $("#hero").hidden = v !== "overview";
     if (changed) window.scrollTo({ top: 0 });
     render();
+    if (tk && DATA.length) {
+      const c = lastClusters.find((x) => x.ticker === tk.toUpperCase());
+      if (c) openDrawer(c, true);
+    } else closeDrawer(true);
   }
   addEventListener("hashchange", route);
   $$("[data-go]").forEach((b) => b.addEventListener("click", () => go(b.dataset.go)));
@@ -1296,6 +1304,7 @@ footer { color: var(--text-3); font-size: 12.5px; padding: 30px 0 44px; display:
         gen.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }));
       $("#live").title = `Data generated ${gen.toLocaleString()}. Refreshes every weekday morning.`;
       const dates = DATA.map((t) => t.transaction_date).sort();
+      route();
       if (dates.length) $("#footRange").textContent = `Trades ${fmtDate(dates[0])} – ${fmtDate(dates[dates.length - 1], { month: "short", day: "numeric", year: "numeric" })}`;
       render();
     })
