@@ -95,11 +95,12 @@ def detect_clusters(transactions: list) -> list[Cluster]:
                     )
                 )
 
-    # Dedup: keep only the largest cluster per ticker (avoid overlapping sub-windows)
+    # Dedup: keep only the largest cluster per ticker (avoid overlapping sub-windows).
+    # On a tie, prefer the most recent window so a fresh cluster isn't hidden by an older one.
     best_per_ticker = {}
     for c in clusters:
         existing = best_per_ticker.get(c.ticker)
-        if existing is None or c.num_insiders > existing.num_insiders:
+        if existing is None or (c.num_insiders, c.end_date) > (existing.num_insiders, existing.end_date):
             best_per_ticker[c.ticker] = c
 
     return list(best_per_ticker.values())

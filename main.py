@@ -23,7 +23,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from config import LOOKBACK_DAYS, WATCHLIST
 from edgar_client import get_recent_form4_filings, fetch_form4_xml
 from parser import parse_form4_xml
-from storage import init_db, save_transaction, get_recent_transactions
+from storage import init_db, save_transaction, get_recent_transactions, cluster_is_new, mark_cluster_alerted
+from data_quality import filter_transactions
 from cluster_detector import detect_clusters
 from digest import send_digest
 from export_json import export_json
@@ -72,11 +73,17 @@ def run():
     print(f"Saved {new_tx_count} new qualifying transactions.")
 
     print("Detecting clusters...")
-    recent = get_recent_transactions(days=30)  # look back further than fetch window for clustering
+    # Look back further than the fetch window for clustering; drop rows with no
+    # exchange ticker or an implausible price first (see data_quality.py).
+    recent = filter_transactions(get_recent_transactions(days=30))
     clusters = detect_clusters(recent)
 
-    print(f"Found {len(clusters)} cluster(s). Sending digest...")
-    digest_text = send_digest(clusters)
+    # Only alert on clusters we haven't sent before (or that have gained insiders).
+    new_clusters = [c for c in clusters if cluster_is_new(c.ticker, c.start_date, c.end_date, c.num_insiders)]
+    print(f"Found {len(clusters)} cluster(s), {len(new_clusters)} new. Sending digest...")
+    send_digest(new_clusters)
+    for c in new_clusters:
+        mark_cluster_alerted(c.ticker, c.start_date, c.end_date, c.num_insiders)
 
     n_exported = export_json()
     print(f"Exported {n_exported} transactions for the web dashboard.")

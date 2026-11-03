@@ -12,9 +12,9 @@ from config import ALERT_METHOD, EMAIL_CONFIG, SLACK_WEBHOOK_URL, NTFY_SERVER, N
 
 def format_digest(clusters: list) -> str:
     if not clusters:
-        return "No new insider buying clusters today. Nothing above threshold."
+        return "No new insider clusters today."
 
-    lines = [f"**INSIDER CLUSTER BUY DIGEST -- {len(clusters)} companies flagged**\n"]
+    lines = [f"**INSIDER CLUSTER BUY DIGEST -- {len(clusters)} new cluster(s)**\n"]
     for c in sorted(clusters, key=lambda x: x.total_value, reverse=True):
         lines.append(f"**{c.ticker} ({c.company_name})**")
         lines.append(f"  {c.num_insiders} insiders, ${c.total_value:,.0f} combined, {c.start_date} to {c.end_date}")
@@ -69,9 +69,9 @@ def _send_ntfy(body: str, num_clusters: int):
         return
 
     title = (
-        f"{num_clusters} insider cluster(s) flagged"
+        f"{num_clusters} new insider cluster(s)"
         if num_clusters
-        else "No insider clusters today"
+        else "No new insider clusters today"
     )
     headers = {
         "Title": title,

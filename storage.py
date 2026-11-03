@@ -88,6 +88,22 @@ def get_recent_transactions(days: int) -> list[sqlite3.Row]:
         return [dict(row) for row in cur.fetchall()]
 
 
+def cluster_is_new(ticker: str, start_date: str, end_date: str, num_insiders: int) -> bool:
+    """
+    True unless we already alerted on an overlapping cluster for this ticker with at
+    least as many insiders. A cluster that grows (a new insider joins) alerts again.
+    """
+    with get_conn() as conn:
+        cur = conn.execute(
+            """
+            SELECT 1 FROM alerted_clusters
+            WHERE ticker=? AND cluster_end_date>=? AND cluster_start_date<=? AND num_insiders>=?
+            """,
+            (ticker, start_date, end_date, num_insiders),
+        )
+        return cur.fetchone() is None
+
+
 def cluster_already_alerted(ticker: str, start_date: str, end_date: str) -> bool:
     with get_conn() as conn:
         cur = conn.execute(
@@ -99,13 +115,13 @@ def cluster_already_alerted(ticker: str, start_date: str, end_date: str) -> bool
 
 def mark_cluster_alerted(ticker: str, start_date: str, end_date: str, num_insiders: int):
     with get_conn() as conn:
-        try:
-            conn.execute(
-                """
-                INSERT INTO alerted_clusters (ticker, cluster_start_date, cluster_end_date, num_insiders)
-                VALUES (?, ?, ?, ?)
-                """,
-                (ticker, start_date, end_date, num_insiders),
-            )
-        except sqlite3.IntegrityError:
-            pass
+        # Upsert so a cluster that gains insiders without its dates changing is recorded too.
+        conn.execute(
+            """
+            INSERT INTO alerted_clusters (ticker, cluster_start_date, cluster_end_date, num_insiders)
+            VALUES (?, ?, ?, ?)
+            ON CONFLICT(ticker, cluster_start_date, cluster_end_date)
+            DO UPDATE SET num_insiders = MAX(num_insiders, excluded.num_insiders)
+            """,
+            (ticker, start_date, end_date, num_insiders),
+        )

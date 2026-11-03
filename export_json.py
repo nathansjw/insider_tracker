@@ -13,12 +13,13 @@ from config import (
     WEB_DATA_PATH, MIN_PURCHASE_VALUE, MIN_CLUSTER_SIZE, CLUSTER_WINDOW_DAYS,
 )
 from storage import get_recent_transactions
+from data_quality import filter_transactions
 
 EXPORT_DAYS = 180  # how much history the dashboard gets
 
 
 def export_json(path: str = WEB_DATA_PATH) -> int:
-    rows = get_recent_transactions(days=EXPORT_DAYS)
+    rows = filter_transactions(get_recent_transactions(days=EXPORT_DAYS))
     transactions = [
         {
             "company_name": r["company_name"],

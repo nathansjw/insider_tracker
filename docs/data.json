@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T01:03:32+00:00",
+ "generated_at": "2026-11-03T02:53:58+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -7268,7 +7268,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "CHERUVATATH NANDAKUMAR",
    "insider_title": "Director",
    "shares": 795.0,
@@ -7278,7 +7278,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "CULLIGAN THOMAS M",
    "insider_title": "Director",
    "shares": 795.0,
@@ -7288,7 +7288,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "Fine Carol F.",
    "insider_title": "Director",
    "shares": 795.0,
@@ -7298,7 +7298,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "MENDELSON VICTOR H",
    "insider_title": "Co-COB and Co-CEO",
    "shares": 795.0,
@@ -7308,7 +7308,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "HENRIQUES ADOLFO",
    "insider_title": "Director",
    "shares": 795.0,
@@ -7318,7 +7318,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "SCHRIESHEIM ALAN",
    "insider_title": "Director",
    "shares": 795.0,
@@ -7328,7 +7328,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "Neitzel Julie",
    "insider_title": "Director",
    "shares": 592.0,
@@ -7338,7 +7338,7 @@
   },
   {
    "company_name": "HEICO CORP",
-   "ticker": "HEI, HEI.A",
+   "ticker": "HEI",
    "insider_name": "Hildebrandt Mark H",
    "insider_title": "Director",
    "shares": 795.0,
@@ -9309,16 +9309,6 @@
   {
    "company_name": "Lucky Strike Entertainment Corp",
    "ticker": "LUCK",
-   "insider_name": "Young John Alan",
-   "insider_title": "Director",
-   "shares": 1000.0,
-   "price_per_share": 614.0,
-   "transaction_date": "2026-09-01",
-   "total_value": 614000.0
-  },
-  {
-   "company_name": "Lucky Strike Entertainment Corp",
-   "ticker": "LUCK",
    "insider_name": "Shannon Thomas F.",
    "insider_title": "Chief Executive Officer",
    "shares": 30000.0,
@@ -9827,66 +9817,6 @@
    "total_value": 64398.0
   },
   {
-   "company_name": "AB Multi-Manager Alternative Fund",
-   "ticker": "N/A",
-   "insider_name": "Briskin Brian",
-   "insider_title": "Insider",
-   "shares": 5513.439,
-   "price_per_share": 12.37,
-   "transaction_date": "2026-06-18",
-   "total_value": 68201.24
-  },
-  {
-   "company_name": "Crestline Lending Solutions, LLC",
-   "ticker": "N/A",
-   "insider_name": "DIEHL BOWEN S",
-   "insider_title": "Director",
-   "shares": 25477.058,
-   "price_per_share": 19.63,
-   "transaction_date": "2026-07-24",
-   "total_value": 500114.65
-  },
-  {
-   "company_name": "Andalusian Credit Company, LLC",
-   "ticker": "N/A",
-   "insider_name": "Frank Alan L",
-   "insider_title": "Director",
-   "shares": 7309.71,
-   "price_per_share": 15.32,
-   "transaction_date": "2026-08-28",
-   "total_value": 111984.76
-  },
-  {
-   "company_name": "Andalusian Credit Company, LLC",
-   "ticker": "N/A",
-   "insider_name": "Otting Joseph M",
-   "insider_title": "Director",
-   "shares": 13674.88,
-   "price_per_share": 15.32,
-   "transaction_date": "2026-08-28",
-   "total_value": 209499.16
-  },
-  {
-   "company_name": "CAZ GP Stakes Growth Fund",
-   "ticker": "N/A",
-   "insider_name": "Zook Christopher",
-   "insider_title": "Insider",
-   "shares": 25599.49,
-   "price_per_share": 20.0,
-   "transaction_date": "2026-10-01",
-   "total_value": 511989.8
-  },
-  {
-   "company_name": "CAZ GP Stakes Growth Fund",
-   "ticker": "N/A",
-   "insider_name": "Lindholm Matthew",
-   "insider_title": "Insider",
-   "shares": 17066.33,
-   "price_per_share": 20.0,
-   "transaction_date": "2026-10-01",
-   "total_value": 341326.6
-  },
-  {
    "company_name": "Nakamoto Inc.",
    "ticker": "NAKA",
    "insider_name": "Bailey David F",
@@ -10115,286 +10045,6 @@
    "price_per_share": 12.38,
    "transaction_date": "2026-08-24",
    "total_value": 619000.0
-  },
-  {
-   "company_name": "NC SLF Inc.",
-   "ticker": "NONE",
-   "insider_name": "TEACHERS INSURANCE & ANNUITY ASSOCIATION OF AMERICA",
-   "insider_title": "Insider",
-   "shares": 10249.0,
-   "price_per_share": 9.66,
-   "transaction_date": "2026-05-12",
-   "total_value": 99005.34
-  },
-  {
-   "company_name": "TCW Private Asset Income Fund",
-   "ticker": "NONE",
-   "insider_name": "ROONEY ROBERT GERALD",
-   "insider_title": "Director",
-   "shares": 10018.537,
-   "price_per_share": 9.98,
-   "transaction_date": "2026-07-24",
-   "total_value": 99985.0
-  },
-  {
-   "company_name": "HPS Real Assets Lending Co LP",
-   "ticker": "NONE",
-   "insider_name": "Busch Robert W",
-   "insider_title": "See Remarks",
-   "shares": 4000.0,
-   "price_per_share": 25.0,
-   "transaction_date": "2026-08-10",
-   "total_value": 100000.0
-  },
-  {
-   "company_name": "HPS Real Assets Lending Co LP",
-   "ticker": "NONE",
-   "insider_name": "Choi Yoohyun",
-   "insider_title": "Chief Legal Officer",
-   "shares": 20000.0,
-   "price_per_share": 25.0,
-   "transaction_date": "2026-08-10",
-   "total_value": 500000.0
-  },
-  {
-   "company_name": "HPS Real Assets Lending Co LP",
-   "ticker": "NONE",
-   "insider_name": "French Scot",
-   "insider_title": "Director",
-   "shares": 400000.0,
-   "price_per_share": 25.0,
-   "transaction_date": "2026-08-10",
-   "total_value": 10000000.0
-  },
-  {
-   "company_name": "HPS Real Assets Lending Co LP",
-   "ticker": "NONE",
-   "insider_name": "Lawson Hugh J",
-   "insider_title": "Co-Chief Executive Officer",
-   "shares": 16000.0,
-   "price_per_share": 25.0,
-   "transaction_date": "2026-08-10",
-   "total_value": 400000.0
-  },
-  {
-   "company_name": "Blackstone Private Equity Strategies Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Patel Viral",
-   "insider_title": "Chief Executive Officer",
-   "shares": 51083.611,
-   "price_per_share": 39.1515,
-   "transaction_date": "2026-08-28",
-   "total_value": 2000000.0
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Abrahams Riad M",
-   "insider_title": "Chief Executive Officer",
-   "shares": 3915.427,
-   "price_per_share": 25.54,
-   "transaction_date": "2026-09-01",
-   "total_value": 100000.01
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Querrey Kimberly K.",
-   "insider_title": "Director",
-   "shares": 274079.875,
-   "price_per_share": 25.54,
-   "transaction_date": "2026-09-01",
-   "total_value": 7000000.01
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Knopp Paul James",
-   "insider_title": "Director",
-   "shares": 3915.427,
-   "price_per_share": 25.54,
-   "transaction_date": "2026-09-01",
-   "total_value": 100000.01
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Collins Philip Daniel",
-   "insider_title": "Director",
-   "shares": 78308.536,
-   "price_per_share": 25.54,
-   "transaction_date": "2026-09-01",
-   "total_value": 2000000.01
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Desai Ravi Rajendra",
-   "insider_title": "President",
-   "shares": 15661.707,
-   "price_per_share": 25.54,
-   "transaction_date": "2026-09-01",
-   "total_value": 400000.0
-  },
-  {
-   "company_name": "Evanston Multi-Alpha Fund",
-   "ticker": "NONE",
-   "insider_name": "Spence John Yogi",
-   "insider_title": "Insider",
-   "shares": 10388.315,
-   "price_per_share": 9.6263,
-   "transaction_date": "2026-09-01",
-   "total_value": 100001.04
-  },
-  {
-   "company_name": "Sixth Street Lending Partners",
-   "ticker": "NONE",
-   "insider_name": "Tanemura Ronald",
-   "insider_title": "Director",
-   "shares": 1759.0,
-   "price_per_share": 28.78,
-   "transaction_date": "2026-09-01",
-   "total_value": 50624.02
-  },
-  {
-   "company_name": "Sixth Street Lending Partners",
-   "ticker": "NONE",
-   "insider_name": "Waxman Alan",
-   "insider_title": "Vice President",
-   "shares": 1405583.0,
-   "price_per_share": 28.78,
-   "transaction_date": "2026-09-01",
-   "total_value": 40452678.74
-  },
-  {
-   "company_name": "Sixth Street Lending Partners",
-   "ticker": "NONE",
-   "insider_name": "Waxman Alan",
-   "insider_title": "Vice President",
-   "shares": 255924.0,
-   "price_per_share": 28.78,
-   "transaction_date": "2026-09-01",
-   "total_value": 7365492.72
-  },
-  {
-   "company_name": "CIM GROUP, INC.",
-   "ticker": "NONE",
-   "insider_name": "RESSLER RICHARD S",
-   "insider_title": "CEO & President",
-   "shares": 526808.168,
-   "price_per_share": 5.14,
-   "transaction_date": "2026-09-04",
-   "total_value": 2707793.98
-  },
-  {
-   "company_name": "Diameter Dynamic Credit Fund",
-   "ticker": "NONE",
-   "insider_name": "Lewinsohn Jonathan",
-   "insider_title": "Co-President",
-   "shares": 98814.229,
-   "price_per_share": 10.12,
-   "transaction_date": "2026-09-10",
-   "total_value": 1000000.0
-  },
-  {
-   "company_name": "Fortress Private Lending Fund",
-   "ticker": "NONE",
-   "insider_name": "Dreyfuss Avraham",
-   "insider_title": "Chief Financial Officer",
-   "shares": 4133.0,
-   "price_per_share": 24.1947,
-   "transaction_date": "2026-09-18",
-   "total_value": 99996.7
-  },
-  {
-   "company_name": "Fortress Private Lending Fund",
-   "ticker": "NONE",
-   "insider_name": "Munro Lucy Lu",
-   "insider_title": "Chief Operating Officer",
-   "shares": 4133.0,
-   "price_per_share": 24.1947,
-   "transaction_date": "2026-09-18",
-   "total_value": 99996.7
-  },
-  {
-   "company_name": "Nuveen Churchill Private Capital Income Fund",
-   "ticker": "NONE",
-   "insider_name": "Kencel Kenneth J.",
-   "insider_title": "CEO and President",
-   "shares": 10482.18,
-   "price_per_share": 23.85,
-   "transaction_date": "2026-09-28",
-   "total_value": 249999.99
-  },
-  {
-   "company_name": "NC SLF Inc.",
-   "ticker": "NONE",
-   "insider_name": "TEACHERS INSURANCE & ANNUITY ASSOCIATION OF AMERICA",
-   "insider_title": "Insider",
-   "shares": 10186.0,
-   "price_per_share": 9.72,
-   "transaction_date": "2026-09-28",
-   "total_value": 99007.92
-  },
-  {
-   "company_name": "Blackstone Private Equity Strategies Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Solotar Joan",
-   "insider_title": "Director",
-   "shares": 4354.984,
-   "price_per_share": 39.7246,
-   "transaction_date": "2026-09-29",
-   "total_value": 173000.0
-  },
-  {
-   "company_name": "Blackstone Private Equity Strategies Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "James Christopher J.",
-   "insider_title": "Chairperson",
-   "shares": 3297.705,
-   "price_per_share": 39.7246,
-   "transaction_date": "2026-09-29",
-   "total_value": 131000.01
-  },
-  {
-   "company_name": "Stone Point Credit Income Fund",
-   "ticker": "NONE",
-   "insider_name": "Bronner Scott Jonathan",
-   "insider_title": "President",
-   "shares": 3417.621,
-   "price_per_share": 24.7338,
-   "transaction_date": "2026-09-30",
-   "total_value": 84530.75
-  },
-  {
-   "company_name": "83 Investment Group Income Fund",
-   "ticker": "NONE",
-   "insider_name": "SELTER ERIC JAY",
-   "insider_title": "Insider",
-   "shares": 48923.68,
-   "price_per_share": 10.22,
-   "transaction_date": "2026-10-01",
-   "total_value": 500000.01
-  },
-  {
-   "company_name": "MSD Investment Corp.",
-   "ticker": "NONE",
-   "insider_name": "Williams Brian S",
-   "insider_title": "See Remarks",
-   "shares": 13129.501,
-   "price_per_share": 23.68,
-   "transaction_date": "2026-10-19",
-   "total_value": 310906.58
-  },
-  {
-   "company_name": "Blackstone Multi-Strategy Hedge Fund L.P.",
-   "ticker": "NONE",
-   "insider_name": "Abrahams Riad M",
-   "insider_title": "Chief Executive Officer",
-   "shares": 31213.19,
-   "price_per_share": 25.47,
-   "transaction_date": "2026-10-22",
-   "total_value": 794999.95
   },
   {
    "company_name": "NORTHPOINTE BANCSHARES INC",
@@ -10768,7 +10418,7 @@
   },
   {
    "company_name": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
-   "ticker": "NYSE:FLG",
+   "ticker": "FLG",
    "insider_name": "Frank Alan L",
    "insider_title": "Director",
    "shares": 10000.0,
@@ -12487,16 +12137,6 @@
    "total_value": 2665900.0
   },
   {
-   "company_name": "Securetech Innovations, Inc.",
-   "ticker": "SCTH",
-   "insider_name": "SITRA J SCOTT",
-   "insider_title": "President & CEO",
-   "shares": 1000.0,
-   "price_per_share": 100000.0,
-   "transaction_date": "2026-08-21",
-   "total_value": 100000000.0
-  },
-  {
    "company_name": "Smith Douglas Homes Corp.",
    "ticker": "SDHC",
    "insider_name": "Bradbury Thomas L",
@@ -12645,16 +12285,6 @@
    "price_per_share": 10.85,
    "transaction_date": "2026-08-14",
    "total_value": 54250.0
-  },
-  {
-   "company_name": "SL Science Holding Ltd",
-   "ticker": "SLBT",
-   "insider_name": "Wang Ching-Dong",
-   "insider_title": "Chief Executive Officer",
-   "shares": 4545306.0,
-   "price_per_share": 2272653.0,
-   "transaction_date": "2026-09-29",
-   "total_value": 10329903316818.0
   },
   {
    "company_name": "Soluna Holdings, Inc",
@@ -13607,16 +13237,6 @@
    "total_value": 61476.89
   },
   {
-   "company_name": "UNIVERSAL SAFETY PRODUCTS, INC.",
-   "ticker": "UUU",
-   "insider_name": "AULT MILTON C III",
-   "insider_title": "Director",
-   "shares": 18000.0,
-   "price_per_share": 5134.0,
-   "transaction_date": "2026-09-30",
-   "total_value": 92412000.0
-  },
-  {
    "company_name": "Uxin Ltd",
    "ticker": "UXIN",
    "insider_name": "Li Bin (William)",
@@ -14105,16 +13725,6 @@
    "price_per_share": 49.6,
    "transaction_date": "2026-08-19",
    "total_value": 99993.6
-  },
-  {
-   "company_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
-   "ticker": "[NONE]",
-   "insider_name": "GALLIGAN GREGORY T",
-   "insider_title": "CEO and President",
-   "shares": 5143.644,
-   "price_per_share": 19.4415,
-   "transaction_date": "2026-10-21",
-   "total_value": 100000.15
   }
  ]
 }
