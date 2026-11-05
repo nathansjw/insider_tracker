@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T18:49:21+00:00",
+ "generated_at": "2026-11-05T18:57:54+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -1407,6 +1407,66 @@
    "total_value": 500733.0
   },
   {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "Szlosek Thomas A",
+   "insider_title": "EVP & CFO",
+   "shares": 551.0,
+   "price_per_share": 181.1711,
+   "transaction_date": "2026-11-02",
+   "total_value": 99825.28
+  },
+  {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "Manley Michael Mark",
+   "insider_title": "CEO and Director",
+   "shares": 3708.0,
+   "price_per_share": 183.8387,
+   "transaction_date": "2026-11-02",
+   "total_value": 681673.9
+  },
+  {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "Manley Michael Mark",
+   "insider_title": "CEO and Director",
+   "shares": 1892.0,
+   "price_per_share": 184.6458,
+   "transaction_date": "2026-11-02",
+   "total_value": 349349.85
+  },
+  {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "Szlosek Thomas A",
+   "insider_title": "EVP & CFO",
+   "shares": 556.0,
+   "price_per_share": 180.0,
+   "transaction_date": "2026-11-03",
+   "total_value": 100080.0
+  },
+  {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "Szlosek Thomas A",
+   "insider_title": "EVP & CFO",
+   "shares": 541.0,
+   "price_per_share": 185.0,
+   "transaction_date": "2026-11-03",
+   "total_value": 100085.0
+  },
+  {
+   "company_name": "AUTONATION, INC.",
+   "ticker": "AN",
+   "insider_name": "EDMUNDS C COLEMAN",
+   "insider_title": "EVP, Gen Counsel & Corp Sec",
+   "shares": 300.0,
+   "price_per_share": 183.25,
+   "transaction_date": "2026-11-03",
+   "total_value": 54975.0
+  },
+  {
    "company_name": "Angel Studios, Inc.",
    "ticker": "ANGX",
    "insider_name": "Sarowitz Steven I",
@@ -1785,6 +1845,26 @@
    "price_per_share": 246.91,
    "transaction_date": "2026-08-14",
    "total_value": 222219.0
+  },
+  {
+   "company_name": "Aspen Neuroscience, Inc.",
+   "ticker": "ASPE",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 1000000.0,
+   "price_per_share": 15.0,
+   "transaction_date": "2026-11-02",
+   "total_value": 15000000.0
+  },
+  {
+   "company_name": "Aspen Neuroscience, Inc.",
+   "ticker": "ASPE",
+   "insider_name": "Thompson Peter A.",
+   "insider_title": "Director",
+   "shares": 1000000.0,
+   "price_per_share": 15.0,
+   "transaction_date": "2026-11-02",
+   "total_value": 15000000.0
   },
   {
    "company_name": "Strive, Inc.",
@@ -3995,6 +4075,16 @@
    "price_per_share": 18.08,
    "transaction_date": "2026-08-17",
    "total_value": 94016.0
+  },
+  {
+   "company_name": "CREDIT ACCEPTANCE CORP",
+   "ticker": "CACC",
+   "insider_name": "TRYFOROS THOMAS N",
+   "insider_title": "Director",
+   "shares": 3000.0,
+   "price_per_share": 485.2,
+   "transaction_date": "2026-11-02",
+   "total_value": 1455600.0
   },
   {
    "company_name": "CATERPILLAR INC",
@@ -7577,6 +7667,26 @@
    "total_value": 399000.0
   },
   {
+   "company_name": "Hilton Grand Vacations Inc.",
+   "ticker": "HGV",
+   "insider_name": "Wang Mark D",
+   "insider_title": "See Remarks",
+   "shares": 12200.0,
+   "price_per_share": 40.92,
+   "transaction_date": "2026-11-02",
+   "total_value": 499224.0
+  },
+  {
+   "company_name": "Hilton Grand Vacations Inc.",
+   "ticker": "HGV",
+   "insider_name": "Potter Leonard",
+   "insider_title": "Director",
+   "shares": 2500.0,
+   "price_per_share": 41.55,
+   "transaction_date": "2026-11-03",
+   "total_value": 103875.0
+  },
+  {
    "company_name": "Howard Hughes Holdings Inc.",
    "ticker": "HHH",
    "insider_name": "Davis Andrew D.",
@@ -8057,6 +8167,16 @@
    "total_value": 9999985.0
   },
   {
+   "company_name": "INTEL CORP",
+   "ticker": "INTC",
+   "insider_name": "TAN LIP BU",
+   "insider_title": "CEO",
+   "shares": 150000.0,
+   "price_per_share": 64.7312,
+   "transaction_date": "2026-11-02",
+   "total_value": 9709680.0
+  },
+  {
    "company_name": "Innventure, Inc.",
    "ticker": "INV",
    "insider_name": "Donnally James O",
@@ -8125,6 +8245,26 @@
    "price_per_share": 3.0,
    "transaction_date": "2026-10-29",
    "total_value": 300000.0
+  },
+  {
+   "company_name": "JETBLUE AIRWAYS CORP",
+   "ticker": "JBLU",
+   "insider_name": "Mittal Nik",
+   "insider_title": "Director",
+   "shares": 31300.0,
+   "price_per_share": 3.235,
+   "transaction_date": "2026-11-03",
+   "total_value": 101255.5
+  },
+  {
+   "company_name": "JETBLUE AIRWAYS CORP",
+   "ticker": "JBLU",
+   "insider_name": "Mittal Nik",
+   "insider_title": "Director",
+   "shares": 68700.0,
+   "price_per_share": 3.24,
+   "transaction_date": "2026-11-03",
+   "total_value": 222588.0
   },
   {
    "company_name": "Jushi Holdings Inc.",
@@ -8355,6 +8495,16 @@
    "price_per_share": 29.1,
    "transaction_date": "2026-09-10",
    "total_value": 203700.0
+  },
+  {
+   "company_name": "KNOT Offshore Partners LP",
+   "ticker": "KNOP",
+   "insider_name": "Seglem Trygve",
+   "insider_title": "Director",
+   "shares": 2083333.0,
+   "price_per_share": 20.88,
+   "transaction_date": "2026-11-03",
+   "total_value": 43499993.04
   },
   {
    "company_name": "Kodiak Sciences Inc.",
@@ -9489,6 +9639,26 @@
   {
    "company_name": "Stride, Inc.",
    "ticker": "LRN",
+   "insider_name": "Shepherd Brian A.",
+   "insider_title": "Director",
+   "shares": 7120.0,
+   "price_per_share": 76.54,
+   "transaction_date": "2026-11-02",
+   "total_value": 544964.8
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Shepherd Brian A.",
+   "insider_title": "Director",
+   "shares": 4880.0,
+   "price_per_share": 76.9,
+   "transaction_date": "2026-11-02",
+   "total_value": 375272.0
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
    "insider_name": "Haggart Dylan G.",
    "insider_title": "Director",
    "shares": 5000.0,
@@ -9505,6 +9675,26 @@
    "price_per_share": 75.04,
    "transaction_date": "2026-11-03",
    "total_value": 2353029.28
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Shepherd Brian A.",
+   "insider_title": "Director",
+   "shares": 5000.0,
+   "price_per_share": 74.4,
+   "transaction_date": "2026-11-03",
+   "total_value": 372000.0
+  },
+  {
+   "company_name": "Stride, Inc.",
+   "ticker": "LRN",
+   "insider_name": "Shepherd Brian A.",
+   "insider_title": "Director",
+   "shares": 5000.0,
+   "price_per_share": 75.5,
+   "transaction_date": "2026-11-03",
+   "total_value": 377500.0
   },
   {
    "company_name": "LESAKA TECHNOLOGIES INC",
@@ -9525,6 +9715,36 @@
    "price_per_share": 4.4,
    "transaction_date": "2026-09-16",
    "total_value": 65005.6
+  },
+  {
+   "company_name": "LATTICE SEMICONDUCTOR CORP",
+   "ticker": "LSCC",
+   "insider_name": "Tamer Ford",
+   "insider_title": "President & CEO",
+   "shares": 2894.0,
+   "price_per_share": 101.7849,
+   "transaction_date": "2026-11-04",
+   "total_value": 294565.5
+  },
+  {
+   "company_name": "LATTICE SEMICONDUCTOR CORP",
+   "ticker": "LSCC",
+   "insider_name": "Tamer Ford",
+   "insider_title": "President & CEO",
+   "shares": 5696.0,
+   "price_per_share": 102.7116,
+   "transaction_date": "2026-11-04",
+   "total_value": 585045.27
+  },
+  {
+   "company_name": "LATTICE SEMICONDUCTOR CORP",
+   "ticker": "LSCC",
+   "insider_name": "Tamer Ford",
+   "insider_title": "President & CEO",
+   "shares": 1200.0,
+   "price_per_share": 103.3988,
+   "transaction_date": "2026-11-04",
+   "total_value": 124078.56
   },
   {
    "company_name": "LANDSTAR SYSTEM INC",
@@ -11097,6 +11317,16 @@
    "total_value": 35139300.0
   },
   {
+   "company_name": "Pampa Energy Inc.",
+   "ticker": "PAM",
+   "insider_name": "Zuberbuhler Adolfo Fernando",
+   "insider_title": "Chief Financial Officer",
+   "shares": 3136.0,
+   "price_per_share": 66.11,
+   "transaction_date": "2026-11-04",
+   "total_value": 207320.96
+  },
+  {
    "company_name": "PAMT CORP",
    "ticker": "PAMT",
    "insider_name": "MOROUN MATTHEW T",
@@ -11595,6 +11825,16 @@
    "price_per_share": 6.7497,
    "transaction_date": "2026-09-30",
    "total_value": 74246.7
+  },
+  {
+   "company_name": "Proto Labs Inc",
+   "ticker": "PRLB",
+   "insider_name": "Krishna Suresh",
+   "insider_title": "President and CEO",
+   "shares": 750.0,
+   "price_per_share": 69.52,
+   "transaction_date": "2026-11-02",
+   "total_value": 52140.0
   },
   {
    "company_name": "Primo Brands Corp",
@@ -12797,6 +13037,16 @@
    "total_value": 70973.0
   },
   {
+   "company_name": "Seaport Therapeutics, Inc.",
+   "ticker": "SPTX",
+   "insider_name": "Torres Denice",
+   "insider_title": "Director",
+   "shares": 5000.0,
+   "price_per_share": 19.865,
+   "transaction_date": "2026-11-03",
+   "total_value": 99325.0
+  },
+  {
    "company_name": "Scholar Rock Holding Corp",
    "ticker": "SRRK",
    "insider_name": "AKKARAJU SRINIVAS",
@@ -13515,6 +13765,66 @@
    "price_per_share": 139.6,
    "transaction_date": "2026-09-01",
    "total_value": 55010.12
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "BROWN JEFFREY J",
+   "insider_title": "Director",
+   "shares": 17645.0,
+   "price_per_share": 22.67,
+   "transaction_date": "2026-11-02",
+   "total_value": 400012.15
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "Khouri Halim",
+   "insider_title": "EVP, Chief Financial Officer",
+   "shares": 11000.0,
+   "price_per_share": 22.78,
+   "transaction_date": "2026-11-02",
+   "total_value": 250580.0
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "Kumar Balaji",
+   "insider_title": "EVP, Chief Technology Officer",
+   "shares": 2200.0,
+   "price_per_share": 22.77,
+   "transaction_date": "2026-11-02",
+   "total_value": 50094.0
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "LANGENSTEIN MOLLY",
+   "insider_title": "Director",
+   "shares": 2186.0,
+   "price_per_share": 22.91,
+   "transaction_date": "2026-11-02",
+   "total_value": 50081.26
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "MARINO GLENN P",
+   "insider_title": "Director",
+   "shares": 17400.0,
+   "price_per_share": 22.61,
+   "transaction_date": "2026-11-02",
+   "total_value": 393414.0
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "Wooters Rebecca",
+   "insider_title": "EVP, Chief Growth Officer",
+   "shares": 4325.0,
+   "price_per_share": 23.0,
+   "transaction_date": "2026-11-03",
+   "total_value": 99475.0
   },
   {
    "company_name": "Upstart Holdings, Inc.",
