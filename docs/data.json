@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T18:57:54+00:00",
+ "generated_at": "2026-11-06T18:13:16+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -3127,6 +3127,16 @@
    "total_value": 2111557.04
   },
   {
+   "company_name": "Baker Hughes Co",
+   "ticker": "BKR",
+   "insider_name": "RICE JOHN G",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 53.1,
+   "transaction_date": "2026-11-03",
+   "total_value": 531000.0
+  },
+  {
    "company_name": "Beeline Holdings, Inc.",
    "ticker": "BLNE",
    "insider_name": "Liuzza Nicholas Reyland JR",
@@ -4007,6 +4017,26 @@
    "total_value": 246924.0
   },
   {
+   "company_name": "BLACKSTONE MORTGAGE TRUST, INC.",
+   "ticker": "BXMT",
+   "insider_name": "Johnson Timothy Steven",
+   "insider_title": "Chief Executive Officer",
+   "shares": 90000.0,
+   "price_per_share": 11.5039,
+   "transaction_date": "2026-11-04",
+   "total_value": 1035351.0
+  },
+  {
+   "company_name": "BLACKSTONE MORTGAGE TRUST, INC.",
+   "ticker": "BXMT",
+   "insider_name": "NASSAU HENRY N",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 11.4291,
+   "transaction_date": "2026-11-04",
+   "total_value": 114291.0
+  },
+  {
    "company_name": "BEXIL INVESTMENT TRUST",
    "ticker": "BXSY",
    "insider_name": "WINMILL & CO. INC",
@@ -4537,6 +4567,16 @@
    "total_value": 462500.0
   },
   {
+   "company_name": "CLOROX CO /DE/",
+   "ticker": "CLX",
+   "insider_name": "Breber Pierre R",
+   "insider_title": "Director",
+   "shares": 4000.0,
+   "price_per_share": 100.0627,
+   "transaction_date": "2026-11-04",
+   "total_value": 400250.8
+  },
+  {
    "company_name": "COMMERCIAL METALS Co",
    "ticker": "CMC",
    "insider_name": "McPherson John R",
@@ -4955,6 +4995,16 @@
    "price_per_share": 5.88,
    "transaction_date": "2026-10-20",
    "total_value": 117600.0
+  },
+  {
+   "company_name": "CRH PUBLIC LTD CO",
+   "ticker": "CRH",
+   "insider_name": "Talbot Siobhan",
+   "insider_title": "Director",
+   "shares": 2000.0,
+   "price_per_share": 94.63,
+   "transaction_date": "2026-11-03",
+   "total_value": 189260.0
   },
   {
    "company_name": "Salesforce, Inc.",
@@ -6217,6 +6267,186 @@
    "total_value": 15000000.0
   },
   {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 24313.0,
+   "price_per_share": 7.84,
+   "transaction_date": "2026-11-03",
+   "total_value": 190613.92
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 97800.0,
+   "price_per_share": 7.84,
+   "transaction_date": "2026-11-03",
+   "total_value": 766752.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 24400.0,
+   "price_per_share": 7.88,
+   "transaction_date": "2026-11-03",
+   "total_value": 192272.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 98600.0,
+   "price_per_share": 7.88,
+   "transaction_date": "2026-11-03",
+   "total_value": 776968.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 24313.0,
+   "price_per_share": 7.84,
+   "transaction_date": "2026-11-03",
+   "total_value": 190613.92
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 97800.0,
+   "price_per_share": 7.84,
+   "transaction_date": "2026-11-03",
+   "total_value": 766752.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 24400.0,
+   "price_per_share": 7.88,
+   "transaction_date": "2026-11-03",
+   "total_value": 192272.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 98600.0,
+   "price_per_share": 7.88,
+   "transaction_date": "2026-11-03",
+   "total_value": 776968.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 9267.0,
+   "price_per_share": 7.78,
+   "transaction_date": "2026-11-04",
+   "total_value": 72097.26
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 37100.0,
+   "price_per_share": 7.78,
+   "transaction_date": "2026-11-04",
+   "total_value": 288638.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 20000.0,
+   "price_per_share": 7.07,
+   "transaction_date": "2026-11-04",
+   "total_value": 141400.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 9267.0,
+   "price_per_share": 7.78,
+   "transaction_date": "2026-11-04",
+   "total_value": 72097.26
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 37100.0,
+   "price_per_share": 7.78,
+   "transaction_date": "2026-11-04",
+   "total_value": 288638.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 20000.0,
+   "price_per_share": 7.07,
+   "transaction_date": "2026-11-04",
+   "total_value": 141400.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 30891.0,
+   "price_per_share": 7.31,
+   "transaction_date": "2026-11-05",
+   "total_value": 225813.21
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "ORBIMED ADVISORS LLC",
+   "insider_title": "Director",
+   "shares": 125200.0,
+   "price_per_share": 7.31,
+   "transaction_date": "2026-11-05",
+   "total_value": 915212.0
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 30891.0,
+   "price_per_share": 7.31,
+   "transaction_date": "2026-11-05",
+   "total_value": 225813.21
+  },
+  {
+   "company_name": "Electra Therapeutics, Inc.",
+   "ticker": "ETRA",
+   "insider_name": "GORDON CARL L",
+   "insider_title": "Director",
+   "shares": 125200.0,
+   "price_per_share": 7.31,
+   "transaction_date": "2026-11-05",
+   "total_value": 915212.0
+  },
+  {
    "company_name": "enCore Energy Corp.",
    "ticker": "EU",
    "insider_name": "SHERIFF WILLIAM M",
@@ -6335,6 +6565,16 @@
    "price_per_share": 53.11,
    "transaction_date": "2026-10-20",
    "total_value": 716453.9
+  },
+  {
+   "company_name": "Franklin BSP Realty Trust, Inc.",
+   "ticker": "FBRT",
+   "insider_name": "Byrne Richard J",
+   "insider_title": "Chairman and CEO",
+   "shares": 162600.0,
+   "price_per_share": 6.14,
+   "transaction_date": "2026-11-03",
+   "total_value": 998364.0
   },
   {
    "company_name": "FUELCELL ENERGY INC",
@@ -6535,6 +6775,16 @@
    "price_per_share": 7.36,
    "transaction_date": "2026-09-21",
    "total_value": 51520.0
+  },
+  {
+   "company_name": "Flowco Holdings Inc.",
+   "ticker": "FLOC",
+   "insider_name": "Fairbanks Jonathan B.",
+   "insider_title": "Director",
+   "shares": 15140.0,
+   "price_per_share": 19.3477,
+   "transaction_date": "2026-11-04",
+   "total_value": 292924.18
   },
   {
    "company_name": "Frazier Life Sciences Acquisition Corp. II",
@@ -7115,6 +7365,26 @@
    "price_per_share": 21.536,
    "transaction_date": "2026-08-12",
    "total_value": 258432.0
+  },
+  {
+   "company_name": "Galaxy Digital Inc.",
+   "ticker": "GLXY",
+   "insider_name": "Novogratz Michael",
+   "insider_title": "Chief Executive Officer",
+   "shares": 528757.0,
+   "price_per_share": 12.694,
+   "transaction_date": "2026-11-05",
+   "total_value": 6712041.36
+  },
+  {
+   "company_name": "Galaxy Digital Inc.",
+   "ticker": "GLXY",
+   "insider_name": "Novogratz Michael",
+   "insider_title": "Chief Executive Officer",
+   "shares": 231243.0,
+   "price_per_share": 13.632,
+   "transaction_date": "2026-11-05",
+   "total_value": 3152304.58
   },
   {
    "company_name": "GameStop Corp.",
@@ -9267,6 +9537,36 @@
    "total_value": 223300.0
   },
   {
+   "company_name": "Liberty Energy Inc.",
+   "ticker": "LBRT",
+   "insider_name": "Gusek Ron",
+   "insider_title": "CEO and President",
+   "shares": 25000.0,
+   "price_per_share": 15.0934,
+   "transaction_date": "2026-11-03",
+   "total_value": 377335.0
+  },
+  {
+   "company_name": "Liberty Global Ltd.",
+   "ticker": "LBTY",
+   "insider_name": "FRIES MICHAEL T",
+   "insider_title": "President & CEO",
+   "shares": 110000.0,
+   "price_per_share": 9.3652,
+   "transaction_date": "2026-11-04",
+   "total_value": 1030172.0
+  },
+  {
+   "company_name": "Liberty Global Ltd.",
+   "ticker": "LBTY",
+   "insider_name": "Rodriguez Enrique",
+   "insider_title": "EVP, Chief Technology Officer",
+   "shares": 211313.0,
+   "price_per_share": 9.4456,
+   "transaction_date": "2026-11-04",
+   "total_value": 1995978.07
+  },
+  {
    "company_name": "loanDepot, Inc.",
    "ticker": "LDI",
    "insider_name": "Hsieh Anthony Li",
@@ -10317,6 +10617,26 @@
    "total_value": 141600.0
   },
   {
+   "company_name": "Matador Resources Co",
+   "ticker": "MTDR",
+   "insider_name": "Calvert Christopher P",
+   "insider_title": "EVP and CFO",
+   "shares": 2000.0,
+   "price_per_share": 52.57,
+   "transaction_date": "2026-11-05",
+   "total_value": 105140.0
+  },
+  {
+   "company_name": "Metallus Inc.",
+   "ticker": "MTUS",
+   "insider_name": "RICE RONALD A",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 16.61,
+   "transaction_date": "2026-11-05",
+   "total_value": 166100.0
+  },
+  {
    "company_name": "MAGNACHIP SEMICONDUCTOR Corp",
    "ticker": "MX",
    "insider_name": "LEE CHAE",
@@ -10967,6 +11287,16 @@
    "total_value": 101400.0
   },
   {
+   "company_name": "OneAscent Capital Opportunities Fund",
+   "ticker": "OACOX",
+   "insider_name": "Siverling John",
+   "insider_title": "Insider",
+   "shares": 25000.0,
+   "price_per_share": 11.53,
+   "transaction_date": "2026-11-04",
+   "total_value": 288250.0
+  },
+  {
    "company_name": "Origin Bancorp, Inc.",
    "ticker": "OBK",
    "insider_name": "Jones Cecil W.",
@@ -11319,12 +11649,32 @@
   {
    "company_name": "Pampa Energy Inc.",
    "ticker": "PAM",
+   "insider_name": "Mindlin Damian Miguel",
+   "insider_title": "Vicepresident",
+   "shares": 19413.0,
+   "price_per_share": 68.43,
+   "transaction_date": "2026-11-03",
+   "total_value": 1328431.59
+  },
+  {
+   "company_name": "Pampa Energy Inc.",
+   "ticker": "PAM",
    "insider_name": "Zuberbuhler Adolfo Fernando",
    "insider_title": "Chief Financial Officer",
    "shares": 3136.0,
    "price_per_share": 66.11,
    "transaction_date": "2026-11-04",
    "total_value": 207320.96
+  },
+  {
+   "company_name": "Pampa Energy Inc.",
+   "ticker": "PAM",
+   "insider_name": "Mindlin Damian Miguel",
+   "insider_title": "Vicepresident",
+   "shares": 19239.0,
+   "price_per_share": 66.93,
+   "transaction_date": "2026-11-04",
+   "total_value": 1287666.27
   },
   {
    "company_name": "PAMT CORP",
@@ -12507,6 +12857,16 @@
    "total_value": 93896.6
   },
   {
+   "company_name": "RED RIVER BANCSHARES INC",
+   "ticker": "RRBI",
+   "insider_name": "Price Teddy Ray",
+   "insider_title": "Director",
+   "shares": 878.0,
+   "price_per_share": 107.79,
+   "transaction_date": "2026-11-04",
+   "total_value": 94639.62
+  },
+  {
    "company_name": "Rush Street Interactive, Inc.",
    "ticker": "RSI",
    "insider_name": "Winter Thomas",
@@ -13047,6 +13407,16 @@
    "total_value": 99325.0
   },
   {
+   "company_name": "SPX Technologies, Inc.",
+   "ticker": "SPXC",
+   "insider_name": "Deck Brian A",
+   "insider_title": "Director",
+   "shares": 3000.0,
+   "price_per_share": 164.34,
+   "transaction_date": "2026-11-03",
+   "total_value": 493020.0
+  },
+  {
    "company_name": "Scholar Rock Holding Corp",
    "ticker": "SRRK",
    "insider_name": "AKKARAJU SRINIVAS",
@@ -13245,6 +13615,16 @@
    "price_per_share": 5.77,
    "transaction_date": "2026-09-28",
    "total_value": 51930.0
+  },
+  {
+   "company_name": "SYSCO CORP",
+   "ticker": "SYY",
+   "insider_name": "Ondrof Thomas Gerard",
+   "insider_title": "Director",
+   "shares": 2500.0,
+   "price_per_share": 76.62,
+   "transaction_date": "2026-11-04",
+   "total_value": 191550.0
   },
   {
    "company_name": "Thornburg Income Builder Opportunities Trust",
@@ -13617,6 +13997,16 @@
    "total_value": 440350.0
   },
   {
+   "company_name": "TTM TECHNOLOGIES INC",
+   "ticker": "TTMI",
+   "insider_name": "Ali Wajid",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 63.1541,
+   "transaction_date": "2026-11-05",
+   "total_value": 631541.0
+  },
+  {
    "company_name": "TXO Partners, L.P.",
    "ticker": "TXO",
    "insider_name": "SIMPSON BOB R",
@@ -13825,6 +14215,16 @@
    "price_per_share": 23.0,
    "transaction_date": "2026-11-03",
    "total_value": 99475.0
+  },
+  {
+   "company_name": "UPBOUND GROUP, INC.",
+   "ticker": "UPBD",
+   "insider_name": "Karam Fahmi",
+   "insider_title": "Chief Executive Officer",
+   "shares": 4407.0,
+   "price_per_share": 22.71,
+   "transaction_date": "2026-11-03",
+   "total_value": 100082.97
   },
   {
    "company_name": "Upstart Holdings, Inc.",
