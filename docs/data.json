@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T18:13:16+00:00",
+ "generated_at": "2026-11-09T21:36:50+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -1585,6 +1585,16 @@
    "price_per_share": 3.83,
    "transaction_date": "2026-09-24",
    "total_value": 99828.95
+  },
+  {
+   "company_name": "Annovis Bio, Inc.",
+   "ticker": "ANVS",
+   "insider_name": "Hoffman Michael B",
+   "insider_title": "Director",
+   "shares": 5000000.0,
+   "price_per_share": 1.0,
+   "transaction_date": "2026-11-06",
+   "total_value": 5000000.0
   },
   {
    "company_name": "Angel Oak Mortgage REIT, Inc.",
@@ -5197,6 +5207,16 @@
    "total_value": 76432.18
   },
   {
+   "company_name": "CVS HEALTH Corp",
+   "ticker": "CVS",
+   "insider_name": "Shah Prem S",
+   "insider_title": "EVP and Group President",
+   "shares": 23855.0,
+   "price_per_share": 83.895,
+   "transaction_date": "2026-11-06",
+   "total_value": 2001315.22
+  },
+  {
    "company_name": "CURTISS WRIGHT CORP",
    "ticker": "CW",
    "insider_name": "Lyash Jeffrey J.",
@@ -7177,6 +7197,16 @@
    "total_value": 77000.0
   },
   {
+   "company_name": "GLOBALFOUNDRIES Inc.",
+   "ticker": "GFS",
+   "insider_name": "MOORTHY GANESH",
+   "insider_title": "Director",
+   "shares": 2500.0,
+   "price_per_share": 37.475,
+   "transaction_date": "2026-11-05",
+   "total_value": 93687.5
+  },
+  {
    "company_name": "Gogoro Inc.",
    "ticker": "GGR",
    "insider_name": "Yin Chung-Yao",
@@ -8717,6 +8747,16 @@
    "total_value": 9949164.45
   },
   {
+   "company_name": "KINDER MORGAN, INC.",
+   "ticker": "KMI",
+   "insider_name": "KINDER RICHARD D",
+   "insider_title": "Executive Chairman",
+   "shares": 500000.0,
+   "price_per_share": 29.9884,
+   "transaction_date": "2026-11-06",
+   "total_value": 14994200.0
+  },
+  {
    "company_name": "KEMPER Corp",
    "ticker": "KMPR",
    "insider_name": "Gorevic Jason N",
@@ -8765,6 +8805,16 @@
    "price_per_share": 29.1,
    "transaction_date": "2026-09-10",
    "total_value": 203700.0
+  },
+  {
+   "company_name": "KENNAMETAL INC",
+   "ticker": "KMT",
+   "insider_name": "Chowbey Sanjay",
+   "insider_title": "President and CEO",
+   "shares": 7000.0,
+   "price_per_share": 23.624,
+   "transaction_date": "2026-11-05",
+   "total_value": 165368.0
   },
   {
    "company_name": "KNOT Offshore Partners LP",
@@ -9457,6 +9507,46 @@
    "total_value": 121613.87
   },
   {
+   "company_name": "Kodiak Sciences Inc.",
+   "ticker": "KOD",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 8742.0,
+   "price_per_share": 98.51,
+   "transaction_date": "2026-11-04",
+   "total_value": 861174.42
+  },
+  {
+   "company_name": "Kodiak Sciences Inc.",
+   "ticker": "KOD",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 151916.0,
+   "price_per_share": 98.51,
+   "transaction_date": "2026-11-04",
+   "total_value": 14965245.16
+  },
+  {
+   "company_name": "Kodiak Sciences Inc.",
+   "ticker": "KOD",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 4703.0,
+   "price_per_share": 98.51,
+   "transaction_date": "2026-11-05",
+   "total_value": 463292.53
+  },
+  {
+   "company_name": "Kodiak Sciences Inc.",
+   "ticker": "KOD",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 81729.0,
+   "price_per_share": 98.51,
+   "transaction_date": "2026-11-05",
+   "total_value": 8051123.79
+  },
+  {
    "company_name": "KORU Medical Systems, Inc.",
    "ticker": "KRMD",
    "insider_name": "KALBERMATTEN ADAM R",
@@ -9505,6 +9595,26 @@
    "price_per_share": 9.8384,
    "transaction_date": "2026-08-19",
    "total_value": 69203.31
+  },
+  {
+   "company_name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+   "ticker": "KYN",
+   "insider_name": "Baker James C",
+   "insider_title": "President",
+   "shares": 25000.0,
+   "price_per_share": 13.2434,
+   "transaction_date": "2026-11-05",
+   "total_value": 331085.0
+  },
+  {
+   "company_name": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+   "ticker": "KYN",
+   "insider_name": "Little Harrison James",
+   "insider_title": "Executive Vice President",
+   "shares": 3900.0,
+   "price_per_share": 13.215,
+   "transaction_date": "2026-11-05",
+   "total_value": 51538.5
   },
   {
    "company_name": "Li Bang International Corp Inc.",
@@ -9785,6 +9895,16 @@
    "price_per_share": 19.15,
    "transaction_date": "2026-11-02",
    "total_value": 191500.0
+  },
+  {
+   "company_name": "LKQ CORP",
+   "ticker": "LKQ",
+   "insider_name": "GOVE SUE",
+   "insider_title": "Director",
+   "shares": 9795.0,
+   "price_per_share": 20.5294,
+   "transaction_date": "2026-11-04",
+   "total_value": 201085.47
   },
   {
    "company_name": "Limbach Holdings, Inc.",
@@ -10245,6 +10365,56 @@
    "price_per_share": 19.51,
    "transaction_date": "2026-09-15",
    "total_value": 75015.95
+  },
+  {
+   "company_name": "MADRIGAL PHARMACEUTICALS, INC.",
+   "ticker": "MDGL",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 5586.0,
+   "price_per_share": 366.9922,
+   "transaction_date": "2026-11-04",
+   "total_value": 2050018.43
+  },
+  {
+   "company_name": "MADRIGAL PHARMACEUTICALS, INC.",
+   "ticker": "MDGL",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 10080.0,
+   "price_per_share": 368.1134,
+   "transaction_date": "2026-11-04",
+   "total_value": 3710583.07
+  },
+  {
+   "company_name": "MADRIGAL PHARMACEUTICALS, INC.",
+   "ticker": "MDGL",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 60400.0,
+   "price_per_share": 383.015,
+   "transaction_date": "2026-11-06",
+   "total_value": 23134106.0
+  },
+  {
+   "company_name": "MADRIGAL PHARMACEUTICALS, INC.",
+   "ticker": "MDGL",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 13740.0,
+   "price_per_share": 388.29,
+   "transaction_date": "2026-11-06",
+   "total_value": 5335104.6
+  },
+  {
+   "company_name": "MADRIGAL PHARMACEUTICALS, INC.",
+   "ticker": "MDGL",
+   "insider_name": "BAKER BROS. ADVISORS LP",
+   "insider_title": "Director",
+   "shares": 2000.0,
+   "price_per_share": 396.61,
+   "transaction_date": "2026-11-06",
+   "total_value": 793220.0
   },
   {
    "company_name": "MDxHealth SA",
@@ -11925,6 +12095,16 @@
    "price_per_share": 1.5,
    "transaction_date": "2026-10-23",
    "total_value": 1250001.0
+  },
+  {
+   "company_name": "ProMIS Neurosciences Inc.",
+   "ticker": "PMN",
+   "insider_name": "Williams Eugene",
+   "insider_title": "Director",
+   "shares": 26500.0,
+   "price_per_share": 3.43,
+   "transaction_date": "2026-11-04",
+   "total_value": 90895.0
   },
   {
    "company_name": "Primark Meketa Private Equity Investments Fund",
@@ -13867,6 +14047,16 @@
    "total_value": 98663.25
   },
   {
+   "company_name": "TRANSCAT INC",
+   "ticker": "TRNS",
+   "insider_name": "IRICK JAIME A",
+   "insider_title": "President and CEO",
+   "shares": 2275.0,
+   "price_per_share": 101.26,
+   "transaction_date": "2026-11-05",
+   "total_value": 230366.5
+  },
+  {
    "company_name": "TPG RE Finance Trust, Inc.",
    "ticker": "TRTX",
    "insider_name": "SILVERSTEIN WENDY",
@@ -14825,6 +15015,16 @@
    "price_per_share": 3.67,
    "transaction_date": "2026-09-04",
    "total_value": 67447.26
+  },
+  {
+   "company_name": "YPF SOCIEDAD ANONIMA",
+   "ticker": "YPF",
+   "insider_name": "Francos Guillermo Alberto",
+   "insider_title": "Director",
+   "shares": 6930.0,
+   "price_per_share": 51.42,
+   "transaction_date": "2026-07-26",
+   "total_value": 356340.6
   },
   {
    "company_name": "Zone Frontier Inc.",
