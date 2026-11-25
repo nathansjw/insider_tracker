@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T21:29:19+00:00",
+ "generated_at": "2026-11-25T20:37:02+00:00",
  "defaults": {
   "min_purchase_value": 50000,
   "min_cluster_size": 2,
@@ -1057,6 +1057,26 @@
    "total_value": 128900.0
   },
   {
+   "company_name": "Aldeyra Therapeutics, Inc.",
+   "ticker": "ALDX",
+   "insider_name": "Brady Todd C",
+   "insider_title": "President and CEO",
+   "shares": 300000.0,
+   "price_per_share": 0.8102,
+   "transaction_date": "2026-11-20",
+   "total_value": 243060.0
+  },
+  {
+   "company_name": "ALAMO GROUP INC",
+   "ticker": "ALG",
+   "insider_name": "Bauer Robert P",
+   "insider_title": "Director",
+   "shares": 1000.0,
+   "price_per_share": 132.58,
+   "transaction_date": "2026-11-23",
+   "total_value": 132580.0
+  },
+  {
    "company_name": "ALASKA AIR GROUP, INC.",
    "ticker": "ALK",
    "insider_name": "MINICUCCI BENITO",
@@ -1125,6 +1145,16 @@
    "price_per_share": 4.15,
    "transaction_date": "2026-08-11",
    "total_value": 207500.0
+  },
+  {
+   "company_name": "AMC Robotics Corp",
+   "ticker": "AMCI",
+   "insider_name": "Da Shengwei (Sean)",
+   "insider_title": "CEO",
+   "shares": 250000.0,
+   "price_per_share": 1.0543,
+   "transaction_date": "2026-11-20",
+   "total_value": 263575.0
   },
   {
    "company_name": "AMETEK INC/",
@@ -2345,6 +2375,16 @@
    "price_per_share": 57.0,
    "transaction_date": "2026-08-31",
    "total_value": 499776.0
+  },
+  {
+   "company_name": "AST SpaceMobile, Inc.",
+   "ticker": "ASTS",
+   "insider_name": "Cisneros Adriana",
+   "insider_title": "Director",
+   "shares": 21250.0,
+   "price_per_share": 23.54,
+   "transaction_date": "2026-11-20",
+   "total_value": 500225.0
   },
   {
    "company_name": "Alphatec Holdings, Inc.",
@@ -5057,6 +5097,16 @@
    "total_value": 432380.0
   },
   {
+   "company_name": "Commercial Bancgroup, Inc.",
+   "ticker": "CBK",
+   "insider_name": "Yates Charles L.",
+   "insider_title": "Director",
+   "shares": 2757.0,
+   "price_per_share": 31.99,
+   "transaction_date": "2026-11-23",
+   "total_value": 88196.43
+  },
+  {
    "company_name": "Chemours Co",
    "ticker": "CC",
    "insider_name": "HOSTETTER SHANE",
@@ -5887,6 +5937,86 @@
    "total_value": 222885.0
   },
   {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 12138.0,
+   "price_per_share": 183.6973,
+   "transaction_date": "2026-11-20",
+   "total_value": 2229717.83
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 14705.0,
+   "price_per_share": 184.4751,
+   "transaction_date": "2026-11-20",
+   "total_value": 2712706.35
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 28783.0,
+   "price_per_share": 185.5055,
+   "transaction_date": "2026-11-20",
+   "total_value": 5339404.81
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 10403.0,
+   "price_per_share": 186.4701,
+   "transaction_date": "2026-11-20",
+   "total_value": 1939848.45
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 12387.0,
+   "price_per_share": 187.2186,
+   "transaction_date": "2026-11-20",
+   "total_value": 2319076.8
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 2114.0,
+   "price_per_share": 188.5922,
+   "transaction_date": "2026-11-20",
+   "total_value": 398683.91
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 320.0,
+   "price_per_share": 189.65,
+   "transaction_date": "2026-11-20",
+   "total_value": 60688.0
+  },
+  {
+   "company_name": "COHERENT CORP.",
+   "ticker": "COHR",
+   "insider_name": "PAGLIUCA STEPHEN G",
+   "insider_title": "Director",
+   "shares": 1150.0,
+   "price_per_share": 190.05,
+   "transaction_date": "2026-11-20",
+   "total_value": 218557.5
+  },
+  {
    "company_name": "COOPER COMPANIES, INC.",
    "ticker": "COO",
    "insider_name": "Rosebrough Walter M Jr",
@@ -6325,6 +6455,16 @@
    "price_per_share": 0.35,
    "transaction_date": "2026-09-04",
    "total_value": 70000.0
+  },
+  {
+   "company_name": "Cytosorbents Corp",
+   "ticker": "CTSO",
+   "insider_name": "Chan Phillip P.",
+   "insider_title": "Chief Executive Officer",
+   "shares": 68533.0,
+   "price_per_share": 5.18,
+   "transaction_date": "2026-11-20",
+   "total_value": 355000.94
   },
   {
    "company_name": "Corteva, Inc.",
@@ -7135,6 +7275,16 @@
    "price_per_share": 132.61,
    "transaction_date": "2026-08-07",
    "total_value": 198915.0
+  },
+  {
+   "company_name": "DT Midstream, Inc.",
+   "ticker": "DTM",
+   "insider_name": "Baker Stephen W",
+   "insider_title": "Director",
+   "shares": 500.0,
+   "price_per_share": 113.28,
+   "transaction_date": "2026-11-24",
+   "total_value": 56640.0
   },
   {
    "company_name": "DUOS TECHNOLOGIES GROUP, INC.",
@@ -8787,6 +8937,16 @@
    "total_value": 63804.48
   },
   {
+   "company_name": "FILANA THERAPEUTICS, INC.",
+   "ticker": "FLNA",
+   "insider_name": "Barry Richard",
+   "insider_title": "President & CEO",
+   "shares": 86796.0,
+   "price_per_share": 0.62,
+   "transaction_date": "2026-11-20",
+   "total_value": 53813.52
+  },
+  {
    "company_name": "Fluence Energy, Inc.",
    "ticker": "FLNC",
    "insider_name": "BULLS HERMAN E",
@@ -8965,6 +9125,16 @@
    "price_per_share": 18.48,
    "transaction_date": "2026-11-20",
    "total_value": 462000.0
+  },
+  {
+   "company_name": "FRIEDMAN INDUSTRIES INC",
+   "ticker": "FRD",
+   "insider_name": "Taylor Mike J",
+   "insider_title": "President / CEO / Director",
+   "shares": 4000.0,
+   "price_per_share": 33.52,
+   "transaction_date": "2026-11-20",
+   "total_value": 134080.0
   },
   {
    "company_name": "Fermi Inc.",
@@ -10865,6 +11035,16 @@
    "price_per_share": 10.6971,
    "transaction_date": "2026-11-13",
    "total_value": 1069710.0
+  },
+  {
+   "company_name": "Himalaya Shipping Ltd.",
+   "ticker": "HSHP",
+   "insider_name": "Svensen Lars-Christian",
+   "insider_title": "Contracted CEO",
+   "shares": 6800.0,
+   "price_per_share": 15.16,
+   "transaction_date": "2026-11-23",
+   "total_value": 103088.0
   },
   {
    "company_name": "HUBSPOT INC",
@@ -12847,6 +13027,26 @@
    "total_value": 52218.04
   },
   {
+   "company_name": "LEE ENTERPRISES, Inc",
+   "ticker": "LEE",
+   "insider_name": "Hoffmann David Henry",
+   "insider_title": "Director",
+   "shares": 8741.0,
+   "price_per_share": 6.2,
+   "transaction_date": "2026-11-23",
+   "total_value": 54194.2
+  },
+  {
+   "company_name": "LEE ENTERPRISES, Inc",
+   "ticker": "LEE",
+   "insider_name": "Hoffmann David Henry",
+   "insider_title": "Director",
+   "shares": 8741.0,
+   "price_per_share": 6.33,
+   "transaction_date": "2026-11-24",
+   "total_value": 55330.53
+  },
+  {
    "company_name": "Legend Biotech Corp",
    "ticker": "LEGN",
    "insider_name": "Salovey Peter",
@@ -13877,6 +14077,16 @@
    "total_value": 312000.0
   },
   {
+   "company_name": "MARKEL GROUP INC.",
+   "ticker": "MKL",
+   "insider_name": "Harris Greta J",
+   "insider_title": "Director",
+   "shares": 95.0,
+   "price_per_share": 1945.6,
+   "transaction_date": "2026-11-23",
+   "total_value": 184832.0
+  },
+  {
    "company_name": "MESA LABORATORIES INC /CO/",
    "ticker": "MLAB",
    "insider_name": "Kadia Siddhartha",
@@ -13947,6 +14157,46 @@
    "total_value": 502150.0
   },
   {
+   "company_name": "MACH NATURAL RESOURCES LP",
+   "ticker": "MNR",
+   "insider_name": "McMullen William Wallace",
+   "insider_title": "Director",
+   "shares": 12300.0,
+   "price_per_share": 8.16,
+   "transaction_date": "2026-11-20",
+   "total_value": 100368.0
+  },
+  {
+   "company_name": "MACH NATURAL RESOURCES LP",
+   "ticker": "MNR",
+   "insider_name": "WARD TOM L.",
+   "insider_title": "See Remarks",
+   "shares": 135068.0,
+   "price_per_share": 8.02,
+   "transaction_date": "2026-11-20",
+   "total_value": 1083245.36
+  },
+  {
+   "company_name": "MACH NATURAL RESOURCES LP",
+   "ticker": "MNR",
+   "insider_name": "McMullen William Wallace",
+   "insider_title": "Director",
+   "shares": 12500.0,
+   "price_per_share": 7.91,
+   "transaction_date": "2026-11-23",
+   "total_value": 98875.0
+  },
+  {
+   "company_name": "MACH NATURAL RESOURCES LP",
+   "ticker": "MNR",
+   "insider_name": "WARD TOM L.",
+   "insider_title": "See Remarks",
+   "shares": 111932.0,
+   "price_per_share": 7.93,
+   "transaction_date": "2026-11-23",
+   "total_value": 887620.76
+  },
+  {
    "company_name": "MINISO Group Holding Ltd",
    "ticker": "MNSO",
    "insider_name": "Zhang Jingjing Eason",
@@ -13955,6 +14205,16 @@
    "price_per_share": 2.2583,
    "transaction_date": "2026-09-29",
    "total_value": 340099.98
+  },
+  {
+   "company_name": "Momentus Inc.",
+   "ticker": "MNTS",
+   "insider_name": "BURKLE RONALD W",
+   "insider_title": "Insider",
+   "shares": 616444.0,
+   "price_per_share": 1.9475,
+   "transaction_date": "2026-11-20",
+   "total_value": 1200524.69
   },
   {
    "company_name": "ALTRIA GROUP, INC.",
@@ -14105,6 +14365,16 @@
    "price_per_share": 34.86,
    "transaction_date": "2026-11-17",
    "total_value": 91577.22
+  },
+  {
+   "company_name": "MID PENN BANCORP INC",
+   "ticker": "MPB",
+   "insider_name": "Noone John E",
+   "insider_title": "Director",
+   "shares": 2000.0,
+   "price_per_share": 34.029,
+   "transaction_date": "2026-11-20",
+   "total_value": 68058.0
   },
   {
    "company_name": "MapLight Therapeutics, Inc.",
@@ -14305,6 +14575,16 @@
    "price_per_share": 49.2,
    "transaction_date": "2026-11-20",
    "total_value": 98400.0
+  },
+  {
+   "company_name": "Matador Resources Co",
+   "ticker": "MTDR",
+   "insider_name": "Foran Joseph Wm",
+   "insider_title": "Chairman and CEO",
+   "shares": 3000.0,
+   "price_per_share": 47.83,
+   "transaction_date": "2026-11-23",
+   "total_value": 143490.0
   },
   {
    "company_name": "Metallus Inc.",
@@ -14525,16 +14805,6 @@
    "price_per_share": 60.53,
    "transaction_date": "2026-11-17",
    "total_value": 90795.0
-  },
-  {
-   "company_name": "NewGenIvf Group Ltd",
-   "ticker": "NIVF",
-   "insider_name": "Cheung Kong Yiu",
-   "insider_title": "Director",
-   "shares": 222223.0,
-   "price_per_share": 1.5,
-   "transaction_date": "2026-05-28",
-   "total_value": 333334.5
   },
   {
    "company_name": "NewGenIvf Group Ltd",
@@ -14775,6 +15045,16 @@
    "price_per_share": 8.2929,
    "transaction_date": "2026-11-18",
    "total_value": 103661.25
+  },
+  {
+   "company_name": "NeuroPace Inc",
+   "ticker": "NPCE",
+   "insider_name": "Kumar Rakhi",
+   "insider_title": "Director",
+   "shares": 11361.0,
+   "price_per_share": 8.5581,
+   "transaction_date": "2026-11-24",
+   "total_value": 97228.57
   },
   {
    "company_name": "NPK International Inc.",
@@ -15697,6 +15977,16 @@
    "total_value": 3483800.0
   },
   {
+   "company_name": "Blue Owl Technology Finance Corp.",
+   "ticker": "OTF",
+   "insider_name": "Packer Craig",
+   "insider_title": "Chief Executive Officer",
+   "shares": 54711.0,
+   "price_per_share": 9.1609,
+   "transaction_date": "2026-11-23",
+   "total_value": 501202.0
+  },
+  {
    "company_name": "Outlook Therapeutics, Inc.",
    "ticker": "OTLK",
    "insider_name": "Sukhtian Ghiath M.",
@@ -15745,6 +16035,26 @@
    "price_per_share": 26.1499,
    "transaction_date": "2026-09-24",
    "total_value": 65374.75
+  },
+  {
+   "company_name": "Oxford Square Capital Corp.",
+   "ticker": "OXSQ",
+   "insider_name": "COHEN JONATHAN H",
+   "insider_title": "Chief Executive Officer",
+   "shares": 95606.0,
+   "price_per_share": 0.5999,
+   "transaction_date": "2026-11-20",
+   "total_value": 57354.04
+  },
+  {
+   "company_name": "Oxford Square Capital Corp.",
+   "ticker": "OXSQ",
+   "insider_name": "ROSENTHAL SAUL B",
+   "insider_title": "President and COO",
+   "shares": 95606.0,
+   "price_per_share": 0.5999,
+   "transaction_date": "2026-11-20",
+   "total_value": 57354.04
   },
   {
    "company_name": "Proficient Auto Logistics, Inc",
@@ -16317,6 +16627,16 @@
    "total_value": 53000.0
   },
   {
+   "company_name": "PEDEVCO CORP",
+   "ticker": "PED",
+   "insider_name": "Geiser Edward",
+   "insider_title": "Director",
+   "shares": 22000.0,
+   "price_per_share": 10.57,
+   "transaction_date": "2026-11-23",
+   "total_value": 232540.0
+  },
+  {
    "company_name": "PEPSICO INC",
    "ticker": "PEP",
    "insider_name": "POHLAD ROBERT C",
@@ -16525,6 +16845,36 @@
    "price_per_share": 51.2281,
    "transaction_date": "2026-09-14",
    "total_value": 119259.02
+  },
+  {
+   "company_name": "Palantir Technologies Inc.",
+   "ticker": "PLTR",
+   "insider_name": "THIEL PETER",
+   "insider_title": "Director",
+   "shares": 213437.0,
+   "price_per_share": 142.9122,
+   "transaction_date": "2026-11-20",
+   "total_value": 30502751.23
+  },
+  {
+   "company_name": "Palantir Technologies Inc.",
+   "ticker": "PLTR",
+   "insider_name": "THIEL PETER",
+   "insider_title": "Director",
+   "shares": 341423.0,
+   "price_per_share": 143.6841,
+   "transaction_date": "2026-11-20",
+   "total_value": 49057056.47
+  },
+  {
+   "company_name": "Palantir Technologies Inc.",
+   "ticker": "PLTR",
+   "insider_name": "THIEL PETER",
+   "insider_title": "Director",
+   "shares": 295240.0,
+   "price_per_share": 144.6068,
+   "transaction_date": "2026-11-20",
+   "total_value": 42693711.63
   },
   {
    "company_name": "Pluri Inc.",
@@ -16785,6 +17135,26 @@
    "price_per_share": 22.8,
    "transaction_date": "2026-08-25",
    "total_value": 116280.0
+  },
+  {
+   "company_name": "Prenetics Global Ltd",
+   "ticker": "PRE",
+   "insider_name": "Rosin Brian J",
+   "insider_title": "CFO of IM8 (US) LLC",
+   "shares": 30000.0,
+   "price_per_share": 10.14,
+   "transaction_date": "2026-11-20",
+   "total_value": 304200.0
+  },
+  {
+   "company_name": "Prenetics Global Ltd",
+   "ticker": "PRE",
+   "insider_name": "Rosin Brian J",
+   "insider_title": "CFO of IM8 (US) LLC",
+   "shares": 10000.0,
+   "price_per_share": 10.0,
+   "transaction_date": "2026-11-23",
+   "total_value": 100000.0
   },
   {
    "company_name": "Presurance Holdings, Inc.",
@@ -17647,6 +18017,16 @@
    "total_value": 649000.0
   },
   {
+   "company_name": "Atrium Therapeutics, Inc.",
+   "ticker": "RNA",
+   "insider_name": "Winslow Brendan R.",
+   "insider_title": "Chief Financial Officer",
+   "shares": 35000.0,
+   "price_per_share": 7.1262,
+   "transaction_date": "2026-11-20",
+   "total_value": 249417.0
+  },
+  {
    "company_name": "Rainier Acquisition Corp",
    "ticker": "RNAQ",
    "insider_name": "GROSSMAN JONAS",
@@ -17985,6 +18365,16 @@
    "price_per_share": 3.22,
    "transaction_date": "2026-11-19",
    "total_value": 258279.42
+  },
+  {
+   "company_name": "COMSCORE, INC.",
+   "ticker": "SCOR",
+   "insider_name": "McLaughlin Matthew F.",
+   "insider_title": "Chief Executive Officer",
+   "shares": 36622.0,
+   "price_per_share": 3.23,
+   "transaction_date": "2026-11-20",
+   "total_value": 118289.06
   },
   {
    "company_name": "SPACCircle Acquisition Corp.",
@@ -18377,6 +18767,36 @@
    "total_value": 55920.0
   },
   {
+   "company_name": "SONIDA SENIOR LIVING, INC.",
+   "ticker": "SNDA",
+   "insider_name": "Simanovsky Michael",
+   "insider_title": "Director",
+   "shares": 100000.0,
+   "price_per_share": 31.6213,
+   "transaction_date": "2026-11-20",
+   "total_value": 3162130.0
+  },
+  {
+   "company_name": "SONIDA SENIOR LIVING, INC.",
+   "ticker": "SNDA",
+   "insider_name": "Simanovsky Michael",
+   "insider_title": "Director",
+   "shares": 42997.0,
+   "price_per_share": 32.3597,
+   "transaction_date": "2026-11-23",
+   "total_value": 1391370.02
+  },
+  {
+   "company_name": "SONIDA SENIOR LIVING, INC.",
+   "ticker": "SNDA",
+   "insider_name": "Simanovsky Michael",
+   "insider_title": "Director",
+   "shares": 15000.0,
+   "price_per_share": 33.07,
+   "transaction_date": "2026-11-24",
+   "total_value": 496050.0
+  },
+  {
    "company_name": "StoneX Group Inc.",
    "ticker": "SNEX",
    "insider_name": "Thamodaran Dhamu R.",
@@ -18385,6 +18805,26 @@
    "price_per_share": 64.4824,
    "transaction_date": "2026-08-10",
    "total_value": 161206.0
+  },
+  {
+   "company_name": "StoneX Group Inc.",
+   "ticker": "SNEX",
+   "insider_name": "Lyon Charles M",
+   "insider_title": "President",
+   "shares": 10418.0,
+   "price_per_share": 38.56,
+   "transaction_date": "2026-11-23",
+   "total_value": 401718.08
+  },
+  {
+   "company_name": "StoneX Group Inc.",
+   "ticker": "SNEX",
+   "insider_name": "Thamodaran Dhamu R.",
+   "insider_title": "Director",
+   "shares": 2500.0,
+   "price_per_share": 38.3,
+   "transaction_date": "2026-11-24",
+   "total_value": 95750.0
   },
   {
    "company_name": "SOLITRON DEVICES INC",
@@ -19327,6 +19767,56 @@
    "total_value": 312030.88
   },
   {
+   "company_name": "Atlassian Corp",
+   "ticker": "TEAM",
+   "insider_name": "Cannon-Brookes Michael",
+   "insider_title": "CEO, Co-Founder",
+   "shares": 2700.0,
+   "price_per_share": 140.2003,
+   "transaction_date": "2026-11-23",
+   "total_value": 378540.81
+  },
+  {
+   "company_name": "Atlassian Corp",
+   "ticker": "TEAM",
+   "insider_name": "Cannon-Brookes Michael",
+   "insider_title": "CEO, Co-Founder",
+   "shares": 1337.0,
+   "price_per_share": 141.4459,
+   "transaction_date": "2026-11-23",
+   "total_value": 189113.17
+  },
+  {
+   "company_name": "Atlassian Corp",
+   "ticker": "TEAM",
+   "insider_name": "Cannon-Brookes Michael",
+   "insider_title": "CEO, Co-Founder",
+   "shares": 2199.0,
+   "price_per_share": 138.3358,
+   "transaction_date": "2026-11-23",
+   "total_value": 304200.42
+  },
+  {
+   "company_name": "Atlassian Corp",
+   "ticker": "TEAM",
+   "insider_name": "Cannon-Brookes Michael",
+   "insider_title": "CEO, Co-Founder",
+   "shares": 6701.0,
+   "price_per_share": 139.261,
+   "transaction_date": "2026-11-23",
+   "total_value": 933187.96
+  },
+  {
+   "company_name": "Atlassian Corp",
+   "ticker": "TEAM",
+   "insider_name": "Cannon-Brookes Michael",
+   "insider_title": "CEO, Co-Founder",
+   "shares": 463.0,
+   "price_per_share": 142.1785,
+   "transaction_date": "2026-11-23",
+   "total_value": 65828.65
+  },
+  {
    "company_name": "TELA Bio, Inc.",
    "ticker": "TELA",
    "insider_name": "Capper Joseph H",
@@ -19345,6 +19835,16 @@
    "price_per_share": 1.1653,
    "transaction_date": "2026-09-16",
    "total_value": 58265.0
+  },
+  {
+   "company_name": "TSAKOS ENERGY NAVIGATION LTD",
+   "ticker": "TEN",
+   "insider_name": "TSAKOS NIKOLAOS",
+   "insider_title": "Chief Executive Officer",
+   "shares": 20000.0,
+   "price_per_share": 42.6983,
+   "transaction_date": "2026-11-20",
+   "total_value": 853966.0
   },
   {
    "company_name": "TENAX THERAPEUTICS, INC.",
@@ -19765,6 +20265,16 @@
    "price_per_share": 6.56,
    "transaction_date": "2026-11-16",
    "total_value": 224824.32
+  },
+  {
+   "company_name": "TPG RE Finance Trust, Inc.",
+   "ticker": "TRTX",
+   "insider_name": "Smith Michael Bradley",
+   "insider_title": "Director",
+   "shares": 10000.0,
+   "price_per_share": 6.4,
+   "transaction_date": "2026-11-20",
+   "total_value": 64000.0
   },
   {
    "company_name": "TCW STRATEGIC INCOME FUND INC",
@@ -20407,6 +20917,16 @@
    "total_value": 664120.0
   },
   {
+   "company_name": "United Maritime Corp",
+   "ticker": "USEA",
+   "insider_name": "Tsantanis Stamatios",
+   "insider_title": "Director, CEO",
+   "shares": 30000.0,
+   "price_per_share": 2.8578,
+   "transaction_date": "2026-11-20",
+   "total_value": 85734.0
+  },
+  {
    "company_name": "REAVES UTILITY INCOME FUND",
    "ticker": "UTG",
    "insider_name": "GRIMES THOMAS MICHAEL",
@@ -20555,6 +21075,26 @@
    "price_per_share": 1.095,
    "transaction_date": "2026-11-19",
    "total_value": 93365.18
+  },
+  {
+   "company_name": "Vivani Medical, Inc.",
+   "ticker": "VANI",
+   "insider_name": "Williams Gregg",
+   "insider_title": "Director",
+   "shares": 227959.0,
+   "price_per_share": 1.137,
+   "transaction_date": "2026-11-20",
+   "total_value": 259189.38
+  },
+  {
+   "company_name": "Vivani Medical, Inc.",
+   "ticker": "VANI",
+   "insider_name": "Williams Gregg",
+   "insider_title": "Director",
+   "shares": 4950496.0,
+   "price_per_share": 1.01,
+   "transaction_date": "2026-11-23",
+   "total_value": 5000000.96
   },
   {
    "company_name": "VCI Global Ltd",
@@ -21085,6 +21625,36 @@
    "price_per_share": 37.38,
    "transaction_date": "2026-09-30",
    "total_value": 1121400.0
+  },
+  {
+   "company_name": "Reliance Global Group, Inc.",
+   "ticker": "XGPU",
+   "insider_name": "Beyman Ezra",
+   "insider_title": "Chairman and CEO",
+   "shares": 117385.0,
+   "price_per_share": 2.6,
+   "transaction_date": "2026-11-20",
+   "total_value": 305201.0
+  },
+  {
+   "company_name": "Reliance Global Group, Inc.",
+   "ticker": "XGPU",
+   "insider_name": "Beyman Mordechai Menachem",
+   "insider_title": "Vice President",
+   "shares": 28783.0,
+   "price_per_share": 2.6,
+   "transaction_date": "2026-11-20",
+   "total_value": 74835.8
+  },
+  {
+   "company_name": "Reliance Global Group, Inc.",
+   "ticker": "XGPU",
+   "insider_name": "Korman Judah",
+   "insider_title": "Chief Operating Officer",
+   "shares": 51737.0,
+   "price_per_share": 2.6,
+   "transaction_date": "2026-11-20",
+   "total_value": 134516.2
   },
   {
    "company_name": "Chiron Real Estate Inc.",
